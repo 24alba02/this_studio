@@ -1,0 +1,17 @@
+metric,value
+Overall Accuracy,0.32323232323232326
+Correct Predictions,32
+Total Predictions,99
+Task,1
+N-shots,4
+Model,gemma:2b
+Timestamp,2025-11-23T11:54:05.610757
+Brady Accuracy,0.0
+Brady TP,0
+Brady Total,33
+Normal Accuracy,0.48484848484848486
+Normal TP,16
+Normal Total,33
+Tachy Accuracy,0.48484848484848486
+Tachy TP,16
+Tachy Total,33

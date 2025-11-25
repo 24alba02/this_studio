@@ -1,0 +1,17 @@
+metric,value
+Overall Accuracy,0.3434343434343434
+Correct Predictions,34
+Total Predictions,99
+Task,1
+N-shots,2
+Model,mistral:7b
+Timestamp,2025-10-28T12:25:43.435104
+Brady Accuracy,0.9090909090909091
+Brady TP,30
+Brady Total,33
+Normal Accuracy,0.030303030303030304
+Normal TP,1
+Normal Total,33
+Tachy Accuracy,0.09090909090909091
+Tachy TP,3
+Tachy Total,33

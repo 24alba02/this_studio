@@ -1,0 +1,17 @@
+metric,value
+Overall Accuracy,0.3333333333333333
+Correct Predictions,33
+Total Predictions,99
+Task,1
+N-shots,8
+Model,phi3:mini
+Timestamp,2025-11-25T11:58:59.511001
+Brady Accuracy,1.0
+Brady TP,33
+Brady Total,33
+Normal Accuracy,0.0
+Normal TP,0
+Normal Total,33
+Tachy Accuracy,0.0
+Tachy TP,0
+Tachy Total,33

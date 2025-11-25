@@ -1,0 +1,29 @@
+{
+  "sequence_length": 100,
+  "brady_range": [
+    4,
+    7
+  ],
+  "normal_range": [
+    8,
+    11
+  ],
+  "tachy_range": [
+    12,
+    16
+  ],
+  "ood_brady_range": [
+    2,
+    5
+  ],
+  "ood_normal_range": [
+    9,
+    10
+  ],
+  "ood_tachy_range": [
+    14,
+    20
+  ],
+  "n_test_samples": 100,
+  "n_ood_samples": 50
+}

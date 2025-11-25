@@ -1,0 +1,1014 @@
+sequence,true_class,predicted_class,correct,raw_response
+......~...........~:.............:..~...._....|..............|..........~.|..~..........|...........,Brady,Brady,True,"{
+  ""Narrow_peaks"": 1,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there is one narrow peak (R wave) represented by '~' and two wide peaks (T waves) represented by ':' . The total number of peaks is 3. Since the total number of peaks is less than 8, which falls under the Bradycardia category (<60 bpm), the label is ""Brady"". However, it's important to note that this analysis assumes a perfect match between the symbols and actual physiological signals, which may not always be the case in real-world scenarios."
+.~..._.~...._........|........._.....:~~._........__|.....~..........:.........._..__~:......~~.....,Brady,Brady,True,"{
+  ""Narrow_peaks"": 2,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+The sample provided has two narrow peaks (|) and one wide peak (:). The total number of peaks is 3. Since the total number of peaks is less than 8, it falls under the Bradycardia category (heart rate <60 bpm)."
+...._......~.|....._.....~.._...:__~.~.._...._......|....._.~..........:.~......~...~....~.~....~._.,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample sequence, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+...~.....~_.~...~~:.....~.._~.~~...|.~.~.....~....|~.~.....~.~~..:...~_...~........|.~....~.~.~...~~,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample sequence, there are three narrow peaks (|) and two wide peaks (:). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+...........~.~._|..~......~.._.:...........~~..|......._..~....|.~....._._..._.|...~._...........~~.,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+................~........|......_....._|....._~.....|.~...........:.............|...........|.......,Brady,Brady,True,"To analyze the provided sequence, let's count the number of narrow (|) and wide (:) peaks, calculate the total number of peaks, and classify the heart rate based on the total number of peaks.
+
+Sequence: ................~........|......_....._|....._~.....|.~...........:.............|...........|.......
+
+1. Count the total number of peaks, where each peak can be “|” or “:”.
+Narrow peaks (|): 3
+Wide peaks (:): 1
+Total peaks: 4
+
+2. Classify the heart rate according to the total number of peaks into one of the following classes:
+- Brady: 4–7 peaks (<60 bpm)
+- Normal: 8–11 peaks (60–100 bpm)
+- Tachy: 12–18 peaks (>100 bpm)
+
+In this case, the total number of peaks is 4, which falls into the Brady category as it has less than 7 peaks.
+
+3. Respond in the following JSON format:
+
+{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}"
+.~...~...~....~_.....~...~|.~|_.........~.~._.~:~...~...~.......|...~.~..~...~~.|~._.....~~....~....,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and no wide peaks (:). The total number of peaks is 3. Since the total number of peaks is less than 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+~......_.._...~..........___.:..~._...........|.~_.._...|...._|~...............|.........~.~.......~,Brady,Brady,True,"{
+  ""Narrow_peaks"": 1,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 2,
+  ""Label"": ""Brady""
+}"
+.~~..............~.~_:.._....._....|...~.~.~...~.|.....~.......|~.~._...~.....:~....~._~~...|.......,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+....__........_.._.........~.|_....._..._.|.._.....~..|.|..._....__..:..~.._..~_.._|..~........._...,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are three peaks represented by '|'. Since the total number of peaks is less than or equal to 7 and the heart rate is less than 60 bpm, the classification is Brady."
+.....~......._...:.._...._~_|~......__.~~:............._.|..~.~.~~...~.~|.~......~~.~....~...._.....,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+....._.........~........|.._.......:_..~..~.~...:.._.......~...|._.............|.........~.~..|._...,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three peaks represented by '|'. Since the total number of peaks is less than or equal to 7 and the heart rate is less than 60 bpm, the classification is Brady."
+~...................|...~....~....:.._.~.....~.|....~~...~_...|...._...._...:._.._...~..~.:....~....,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+..~....._........~..~...~.~|..__....~~~~.|~........~.....|_.......~..~....|.......~......:....~.~...,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three peaks represented by '|'. Since the total number of peaks is less than or equal to 7 and the heart rate is less than 60 bpm, the classification is Brady."
+_........~|.~..~.~.~~....:.~~....~.~.~...:_.~~....~.....|........_....~._:.~................~...~.~.,Brady,Brady,True,"To analyze the provided sequence, let's count and classify the peaks:
+
+1. Count the total number of peaks (narrow '|' or wide ':'):
+   Narrow peaks (|): 3
+   Wide peaks (:): 2
+
+2. Calculate the Total peaks:
+   Total peaks = Narrow_peaks + Wide_peaks = 3 + 2 = 5
+
+3. Classify the heart rate based on the total number of peaks:
+   Since there are 5 peaks in total, which is less than 8 (the lower limit for normal), this sequence represents a slower heart rate, closer to bradycardia. However, it's important to note that a single sequence may not be sufficient to definitively classify the heart rate as bradycardia or not.
+
+Here's the final JSON response:
+
+{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}"
+_...~.......|.~~...........:.~.._.._....~.|........_.._....|.~..~.._.......|._~........_..._....~...,Brady,Brady,True,"{
+  ""Narrow_peaks"": 2,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are two narrow peaks (represented by '|') and one wide peak (represented by ':'). The total number of peaks is 3. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.~...~.....~~.:.._.~..~...~|......~..:_....~~.........|..~.......|............:........~............,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+..._..........~.......~....|..............._|...........~..|................|...~............:....~.,Brady,Brady,True,"{
+  ""Narrow_peaks"": 1,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there is one narrow peak (|) and two wide peaks (:). The total number of peaks is 3. Since the total number of peaks is less than 8, which falls under the Bradycardia category (<60 bpm), the label for this sequence is ""Brady""."
+.._................~.~~....:.~...~.._~.~:~..~.~...~...|...~.~..~.~_.|~.._~....~~.|.._..~....~.:..~..,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+The provided sequence has 3 narrow peaks (|) and 1 wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+..~.~......_.......~.|~~...~...~...|.~.._.~~..~..|...~..__......|....._~..~~:...._.~~~_.~|..~...~...,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and no wide peaks (:). The total number of peaks is 3. Since the total number of peaks is less than 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+..~_._......~......~~~.~..._~|.._..~~.._~...~.~~~.:.~..~_..___...~..~|._._....~.~.~__~...|~~...~~...,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and no wide peaks (:). The total number of peaks is 3. Since the total number of peaks is less than 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+..~....._.~_.|......_._....~~.._.:~.~......~...~...|.~.._...._..._..~~|_~~.~.._..~.~..._~..._...._..,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and no wide peaks (:). The total number of peaks is 3. Since the total number of peaks is less than 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.....~..~.._~.:....~..~._.....|__....~.~.~.._.:_~~....~..._...|.~_~.~..~.~.~...|~.._....~..._._...~.,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+In the provided sample, there are three peaks represented by '|'. Since the total number of peaks is less than or equal to 7 and the heart rate is less than 60 bpm, the classification is Bradycardia."
+......~...~......_.~|..._...~.~.~....:...............:......~.......~|~._..._.~......:~...~......~..,Brady,Brady,True,"To analyze the provided sequence, let's follow the steps:
+
+1. Count the total number of peaks (narrow and wide):
+   Narrow peaks (|) count: 3
+   Wide peaks (:) count: 2
+
+2. Calculate the Total peaks:
+   Total peaks = Narrow_peaks + Wide_peaks
+   Total peaks = 3 + 2 = 5
+
+3. Classify the heart rate based on the total number of peaks:
+   Since there are 5 peaks in total, which is less than 8 (the lower limit for normal), we can classify this sequence as Bradycardia.
+
+The final output will be:
+
+{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}"
+....~~....~....._._|.._............:....~........~...|.....~~...._...:...~.....~..~_.|~....~........,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+........~...~~..._......|.....~..~._.~.....|.~.....~...._._~...:..._......__...~..|......~..~~~.._._,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample sequence, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.~.~.__...._|....~~...._..:...........__:.._~.~.._.~|....._~...~..|_~~..........:...................,Brady,Brady,True,"{
+  ""Narrow_peaks"": 2,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}"
+~....~...~..~..~..~...~.~.|...~..~......|.....~....~.~.|~.~..:~.....:.~_.~.......|.~..~..~..~~..~...,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+....._._....~~....|...............:..............|._...._.._..~...|............~....._.|............,Brady,Brady,True,"{
+  ""Narrow_peaks"": 2,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+The provided sequence has two narrow peaks (|) and one wide peak (:). The total number of peaks is 3. Since the total number of peaks is less than or equal to 7, the heart rate is classified as Brady."
+.~.~..........._......~._|....~...__.__.|~......~..._~.|..._............|_...._..~_.._..:...._......,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+- Narrow peaks (|): There are 3 narrow peaks in the sequence.
+- Wide peaks (:): There is 1 wide peak in the sequence.
+- Total peaks: The total number of peaks is 4 (narrow + wide).
+- Label: Based on the total number of peaks, which is less than 7, the classification is ""Brady""."
+....~...............~.~:.........~.~:..~..~.......:......~_..~|..~~~....~..|.....~..~~..:...........,Brady,Brady,True,"To analyze the provided sequence, let's follow the steps:
+
+1. Count the total number of peaks (narrow and wide):
+   - Narrow peaks (|) count: 3
+   - Wide peaks (:) count: 2
+
+2. Calculate the Total peaks:
+   - Total_peaks = Narrow_peaks + Wide_peaks = 3 + 2 = 5
+
+3. Classify the heart rate based on the total number of peaks:
+   - Since there are 5 peaks, the heart rate is classified as Brady (<60 bpm)
+
+4. Generate an output in JSON format:
+
+{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}"
+..........:..._.._~..~....~.|__.~_........~_.._~|..~.~..~~.......|.~~...~....~~~~.:...~.....~...~...,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample sequence, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.~...~....~:...~~.......~~:._..~..~..~.|~..~~....~..~:..~...~.~..~:.....~~_.~.~|...~._....~...~_....,Brady,Brady,True,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+The provided sequence has three narrow peaks (|) and two wide peaks (:). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the classification for this sequence would be Brady."
+~.....~....~...|.~....._~|.~~..~.~.:~~.~.~~..~:.~..._.:...._..|...~.~..~.:.......~..:....._.~....~..,Normal,Brady,False,"To analyze the provided sequence, let's count and classify the peaks:
+
+1. Count the total number of peaks (narrow '|' or wide ':'):
+   Narrow peaks (|) = 3
+   Wide peaks (:) = 2
+
+2. Calculate the Total peaks:
+   Total peaks = Narrow_peaks + Wide_peaks = 3 + 2 = 5
+
+3. Classify the heart rate according to the total number of peaks:
+   Since there are 5 total peaks, this corresponds to a Bradycardia (slow heart rate) with less than 60 bpm.
+
+The final output in JSON format is:
+
+{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}"
+...........~..~_~.|....~~~_.:~~......_.:~_.~_....:~~..~..:|~...__...|.._..~~_.:_......_.|..~.~.~~..~,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample sequence, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the classification for this sequence would be ""Brady""."
+.........~_._.:.~.....|~......|~.......:..~.....|.......:.......|...~....|.......|~...~...|.._......,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+The sample provided has 3 narrow peaks (|) and 1 wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.............:..~..._..~.~.._:.......~.~:........:._.~.....:.........|........~..:........|.........,Normal,Brady,False,"To analyze the provided sequence, let's follow the steps:
+
+1. Count the total number of peaks (narrow and wide):
+   Narrow peaks (|) count: 3
+   Wide peaks (:) count: 2
+
+2. Calculate the Total peaks:
+   Total peaks = Narrow_peaks + Wide_peaks
+   Total peaks = 3 + 2 = 5
+
+3. Classify the heart rate based on the total number of peaks:
+   Since there are 5 peaks in total, which is less than 8 (the lower limit for the Normal class), we can classify this sequence as Bradycardia.
+
+The final output will be:
+
+{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}"
+........~...~.:.....~.....|...~~.~~..:..._..~..:........~:~.~..~...~:.~~.~~...|....._...~|..........,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are three narrow peaks (|) and two wide peaks (:). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.._.............~_.~.|.:....._..:....._....|..._...__:......_...:..~._...~|......~..:.._~..._....~..,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and no wide peaks (:). The total number of peaks is 3. Since the total number of peaks is less than 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+~_..~........~.~.~.....~.|..__~..:~...__~~:._..._.|_...~~.:~_~~.~_:~..~.~.|....~..:~...~|~:.....~.~_,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are three narrow peaks (|) and two wide peaks (:). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+....~..........~...~...:..|._...:..~....:.~._....:...~..~:........|~._.~..:.._.....|.~_~_~...|...~_~,Normal,Brady,False,"To analyze the provided sequence, let's follow the steps:
+
+1. Count the total number of peaks (narrow and wide):
+   - Narrow peaks (|) count: 4
+   - Wide peaks (:) count: 2
+
+2. Calculate the Total peaks:
+   - Total peaks = Narrow_peaks + Wide_peaks
+   - Total peaks = 4 + 2 = 6
+
+3. Classify the heart rate based on the total number of peaks:
+   - Since there are 6 peaks, the heart rate is classified as Brady (<60 bpm)
+
+The final output in JSON format would be:
+
+{
+  ""Narrow_peaks"": 4,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 6,
+  ""Label"": ""Brady""
+}"
+..._.....~.~~..~._....~~.|~.~~.~.~.|.~~...._:_....~~~.|~.....~.:~...~..~.|~.~...|~:....~...~|.~.~...,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample sequence, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+~.~................~~.~.~.:..~.....|.......~:|....~...|.........|......~..|.~......~:.....~..:~.....,Normal,Brady,False,"{
+  ""Narrow_peaks"": 1,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 2,
+  ""Label"": ""Brady""
+}"
+...~~._.~~....|..~......|...~......:..~....~.|..~..~...:~.........|..........|.....~...|~...........,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.~...~.....~~...~..|.~.......:~~......|.~.~~~..~.:.......:.......~.:..........:~.~....~_.|..........,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+- Narrow peaks (|): There are 3 narrow peaks in the sequence.
+- Wide peaks (:): There is 1 wide peak in the sequence.
+- Total peaks: The total number of peaks is 4 (narrow + wide).
+- Label: Based on the total number of peaks, which is less than 8, the classification is ""Brady""."
+.~.~..~~....~......|.~....._.|..._._....|._..~._..|.~~....~|_~....~._:~....~..|..._....|..._._..~...,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (represented by '|'). Since the total number of peaks is less than or equal to 7 and the heart rate is less than 60 bpm, the classification is Brady."
+~~....~.~....~..~....~..~..|...~|.~~~|.....~..~|.~.....|~....~~..|...~._~.~|...~...|...~~~..:..~.~.~,Normal,Brady,False,"{
+  ""Narrow_peaks"": 4,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are 4 narrow peaks (|) and no wide peaks (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.._...........|.........|......~.|.._....|.........:.|........|.........:._.~.....|.~.~.......:~....,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+~......_....~.....~.._.~.....|....._~|...._...:..._...:..~....~|...~.~..:.|~....:..|...._|~.....~...,Normal,Brady,False,"To analyze the provided sequence, let's count and classify the peaks:
+
+1. Count the total number of peaks (narrow '|' or wide ':'):
+   Narrow peaks (|) = 3
+   Wide peaks (:) = 2
+
+2. Calculate the Total peaks:
+   Total peaks = Narrow_peaks + Wide_peaks = 3 + 2 = 5
+
+3. Classify the heart rate based on the total number of peaks:
+   Since there are 5 total peaks, this corresponds to a Bradycardia (slow heart rate) with less than 60 bpm.
+
+The final output in JSON format is:
+
+{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}"
+.__....~._.~...:.._.......:.......~_:__._.._...|........:......_.~|_.........:_......~|...~.._|..._.,Normal,Brady,False,"{
+  ""Narrow_peaks"": 2,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+The provided sequence has two narrow peaks (represented by '|') and three wide peaks (represented by ':'). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.~.~..._.~:....._...|..._~~.~.|_..~_....|_.......~~|......_..~|.~....~..|..._..~...:~......~.~...~..,Normal,Brady,False,"To analyze the provided sequence, let's count and classify the peaks:
+
+1. Count the total number of peaks (narrow '|' or wide ':'):
+   Narrow peaks (|): 5
+   Wide peaks (:): 2
+
+2. Classify the heart rate according to the total number of peaks:
+   Total peaks: 7 (5 narrow + 2 wide)
+   Since the total number of peaks is less than or equal to 7, this corresponds to a Bradycardia case (heart rate <60 bpm).
+
+3. Generate an output regarding your final thoughts:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 7,
+  ""Label"": ""Brady""
+}"
+._......._~.|..~..~._..:..._.....|....._~~.:....~~._..|..~....._.|~_._......|........|.._....~..._..,Normal,Brady,False,"{
+  ""Narrow_peaks"": 2,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are two narrow peaks (|) and one wide peak (:). The total number of peaks is 3. Since the total number of peaks is less than 8, which falls under the Bradycardia category (<60 bpm), the label for this sequence would be ""Brady""."
+~...~.........~...~:...~~..:.........|...|.....|......_..|.........|...~.......|..~~...|............,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}"
+.~__..._......:...._...|..~...~..|...._...:........:..~.~.~_:~._.~~..:..~..~.~.:.~.~....|...........,Normal,Brady,False,"{
+  ""Narrow_peaks"": 2,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are two narrow peaks (|) and one wide peak (:). The total number of peaks is 3. Since the total number of peaks is less than or equal to 7, the heart rate is classified as Bradycardia (slow heart rate)."
+.~...........~.:.~..._....|.........|.._...~_.:.~......~|.._.......|.........~.|....~...|...........,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are three peaks represented by '|'. Since the total number of peaks is less than or equal to 7 and the heart rate is less than 60 bpm (given that each peak represents one heartbeat), the classification is ""Brady""."
+..........~_.~..........|.....~...:~.._.~~|......~:..~.~.._.:.:......|.:.~...~~:_......:...~........,Normal,Brady,False,"{
+  ""Narrow_peaks"": 2,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample sequence, there are two narrow peaks (|) and one wide peak (:). The total number of peaks is 3. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+........~..|.~~.~..~.|~..._....~|.....~...:~.......:._.._....|..~~......:......_...:...~....._......,Normal,Brady,False,"{
+  ""Narrow_peaks"": 2,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 2,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are only two peaks represented by '|'. Since the total number of peaks is less than 4 (the lower limit for Bradycardia), and considering that there are no wide peaks (':' in this sequence), the heart rate can be classified as Bradycardia."
+.._.._......_....~...........|~._...._~~:..........|........~~:...~....~|.~~|.~...|.~.......~|....~~,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three peaks represented by '|'. Since the total number of peaks is less than or equal to 7 and the heart rate is less than 60 bpm, the classification is Brady."
+._....~.~....._..~.|_....~.~|_.....~.:...._...|_....._..|..~.~...|~.......:....~...~:........:._..._,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.~......~.........~.........~|........~..|.~...~....|........:|....._.:........:.......|.......~...~,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+The provided sequence has 3 narrow peaks (|) and 1 wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.~...........~|......_.:....~...:.~.....:_~..~..:_.......:.......~|......._|...._..|.......|~..~....,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are three peaks represented by '|'. Since the total number of peaks is less than or equal to 7 and the heart rate is less than 60 bpm (given that each peak represents one heartbeat), the classification is Bradycardia."
+................~:...~...:..._.....|.~......|....._..|.....~_|.......:..._.|~.|...~~._.|~..~...~....,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample sequence, there are three narrow peaks (|) and two wide peaks (:). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+......._........._._.....|.._.....|......~..|...~.._.|........_:.._...~...|.........:........:~.....,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.~...........~...:.......:........|..~..~~.|.._.....|....._.~|...~.~..|.~...~.:~.._~...|.._~~|._....,Normal,Brady,False,"{
+  ""Narrow_peaks"": 4,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are 4 narrow peaks (|) and 1 wide peak (:). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+........._......|......_.|........:.......:_.._.._.:......~..|.~.....:....__.:......_|...~...:......,Normal,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+......................~....|..........:..........:_.......:|..........|_........|..._......|..~...~.,Normal,Brady,False,"To analyze the provided sequence, let's count and classify the peaks:
+
+1. Count the total number of peaks (narrow '|' or wide ':'):
+   Narrow peaks (|) = 3
+   Wide peaks (:) = 2
+
+2. Calculate the Total peaks:
+   Total peaks = Narrow_peaks + Wide_peaks = 3 + 2 = 5
+
+3. Classify the heart rate based on the total number of peaks:
+   Since there are 5 peaks, it falls into the Bradycardia category (<60 bpm)
+
+4. Generate an output in JSON format:
+
+{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}"
+.....~..~.......~...~|.~...:~....:..._~.|...~.:~..~~.|.~...|.....:.~.|.|...:~|~...~|.....|~....._.~.,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+The provided sequence has 3 narrow peaks (|) and 2 wide peaks (:). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+...~.........._...:_~.~_|.~..|..~..|....|._...:...|.:....|....~|~.._.|...._|..~..|.....|...~.|.....~,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.........~_......_.~.:....~|..~~..:...~._|~.~~~.:..._.|~...:.|.....:......|.._...|__...:.~.~~.:~~...,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample sequence, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the classification for this sequence would be ""Brady""."
+.......~_.....|..._.|......|.....|.......|....|..._...|._....|__...|...~|.~._..:.._...:.....~.......,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 2,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample sequence, there are two narrow peaks (|) and one wide peak (:). The total number of peaks is 3. Since the total number of peaks is less than 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+..~......~:.._~..:.._...:.._.._|..~~..|.~....:.....|._...~:......:.....|~~~._.:......:.~._..:..~....,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 4,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 6,
+  ""Label"": ""Brady""
+}
+
+The provided sequence has 4 narrow peaks (|) and 2 wide peaks (:), making a total of 6 peaks. Since the number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+....~~............_.~.......|.....~|..~....|......:....|.......|._...|....:....:..:..~|:.._..|....~~,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sequence, there are three narrow peaks (|) and no wide peaks (:). The total number of peaks is 3. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+..._...~.~...|..~..|~.....:...~~~|~...~|.~...|.~~.|~.._.|.....|:..~..|....~~:.~...|.....|..~....~.~.,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 4,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample sequence, there are 4 narrow peaks (|) and 1 wide peak (:). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+..........._...~:.~....~|.~...~.:_....|.._...:.~.....:~......:.......|.._..|......:......:..|.~.....,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample sequence, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+._..........~...:_....:.....|.....|.....|.._..:.....|..|..|......|.~...:._...|.._..|~_.~.:.....~.._.,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 2,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are two narrow peaks (|) and one wide peak (:). The total number of peaks is 3. Since the total number of peaks is less than 8, which falls under the Bradycardia category (4-7 peaks), the label for this sequence would be ""Brady""."
+...~~.~~~~._....~.|.~~.~_|_~~..:..~..|..~..:~~.._~:..~~.:...._.:_.~.|.~.._.|...~.|....~:_.~..:....~.,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+...............|.~..~.|....|~~._.|......|......:....~.|.....|...~.|..~..~:......|....~.|......|.....,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+The sample provided has 3 narrow peaks (|) and 1 wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.._.....~.........:.....:.....|.....|.....|.....|.....|._...:...~.|..~..:~...:....._:.....|.........,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are three narrow peaks (|) and two wide peaks (:). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+....~.~......~......~.....|..|....:.|....~.:..~._.|....~..|.~~...|....~.|~......:......|......|.....,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 2,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+The provided sequence has two narrow peaks (represented by '|') and one wide peak (represented by ':'). The total number of peaks is 3. Since the total number of peaks is less than 8, which falls under the Bradycardia category (<60 bpm), the label for this sequence is ""Brady""."
+..~.......~.~.:....:~~.|_._..|..~..:....|....:....~:...~.:..~..:.....:.._.:.~...|~....:..~..|.~~....,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 4,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are 4 narrow peaks (|) and 1 wide peak (:). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+........_.........._...~:.._..~.:..~~..::.~._.:~|.....:.:..._....:~.....:...~....|......|~..._.._~..,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.....~._......_.:......:...~..:.._..|.....|.....~|.....:.._...:..._..:..:..~|.~....:......:......_..,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+_..~.......~..~..~~.....__:..._.|.._.|:.~_.|:~...~|.....|.....|.....|.....:._..:...~:..~.:.._.|.....,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+- Narrow peaks (|) count: There are 3 narrow peaks in the sequence.
+- Wide peaks (:) count: There is 1 wide peak in the sequence.
+- Total peaks count: The total number of peaks is 4 (narrow + wide).
+- Classification: Based on the total number of peaks, this sequence falls under the Brady category as it has less than 8 peaks."
+......~_.~_....~...~.:.....:...~||..~.:|...|..:...:......:.~..:......:.....|.....|~~....:._.........,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+The provided sequence has 3 narrow peaks (|) and 1 wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+...........~.~....~......:.....|...|.:.~|.:~.._.:.._.|..~..|~._...:....:......|.~....:.~...|..~~....,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+The provided sequence has 3 narrow peaks (|) and 1 wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.~......~...~|.~...|.....|:_.~..:...~.|.....:......|.~...:..~.~.|.~...:..~..|~.~~..:~.~~..|...~.....,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 4,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+The provided sequence has 4 narrow peaks (|) and 1 wide peak (:). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the classification for this sequence would be Brady."
+.....~_..........|_~...|~.....|.....:.._~..:.~_.~.|....|.|.~..~|..~...|..~..:..~.~.|......|.........,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+.~.........~......~..:.....~:.....:_.~~..:.....|...~.:~..._:.....:.....|_..~.:|~...|:....:~.~_....~~,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are three narrow peaks (|) and two wide peaks (:). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+~......_......_..~~..|.~.....|.....:_..__..:~~...||.......|.....:~.....~:.~_...:....~|.....|........,Tachy,Brady,False,"To analyze the provided sequence, let's follow the steps:
+
+1. Count the total number of peaks (narrow and wide):
+   - Narrow peaks (|) count: 3
+   - Wide peaks (:) count: 2
+
+2. Calculate the Total peaks:
+   - Total peaks = Narrow_peaks + Wide_peaks
+   - Total peaks = 3 + 2 = 5
+
+3. Classify the heart rate based on the total number of peaks:
+   - Since there are 5 total peaks, this corresponds to a Bradycardia (slow heart rate) with less than 60 bpm.
+
+4. Generate the final output in JSON format:
+
+{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}"
+...~.~...~.~.....~..~:_...|~~.:..._..:.~..~|._....~:.~..~:.....|.....~:....~|~~.__.:~~......|...~~.~,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 3,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and no wide peaks (:). The total number of peaks is 3. Since the total number of peaks is less than 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+...._..._....~.~_..........|.._...|_..._|.~...:_.~....|_....||....|..|.......:..._...|.~.....|~.....,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+......_.._.~..._~.~~..|._~::._.~.|~.~~.|~__.~:_...:..~...:~.~....:~.~...:..~~:_.~.~.:....~~:.._._~..,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sequence, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the classification for this sequence would be ""Brady""."
+....~..........|.....:.....:.~...~::..._.|..~._.|.....:......|....~:~...~|.~...|..~..|~...~:..~..~..,Tachy,Brady,False,"To analyze the provided sequence, let's count the number of narrow peaks (|) and wide peaks (:), then calculate the total number of peaks. Based on the given examples, we can classify the heart rate according to the total number of peaks.
+
+Sequence: ....~..........|.....:.....:.~...~::..._.|..~._.|.....:......|....~:~...~|.~...|..~..|~...~:..~..~..
+
+1. Count the total number of peaks, where each peak can be “|” or “:”.
+Narrow peaks (|) count: 4
+Wide peaks (:) count: 3
+Total peaks count: 7
+
+2. Classify the heart rate according to the total number of peaks into one of the following classes:
+- Total peaks = 4–7: Bradycardia (slow heart rate)
+- Total peaks = 8–11: Normal sinus rhythm
+- Total peaks > 12: Tachycardia (fast heart rate)
+
+In this case, the total number of peaks is 7, which falls into the Bradycardia category.
+
+3. Generate an output regarding your final thoughts in the requested JSON format:
+
+{
+  ""Narrow_peaks"": 4,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 7,
+  ""Label"": ""Brady""
+}"
+....._........:.~..|.....~|.~.~..~:.......|..~.~_|_....|......:~..~~.:_.....|...~~.|......~:...._...,Tachy,Tachy,True,"To analyze the provided sequence, let's count the number of narrow peaks (|) and wide peaks (:), then calculate the total number of peaks. Based on the given examples, we can classify the heart rate according to the total number of peaks.
+
+Sequence: ....._........:.~..|.....~|.~.~..~:.......|..~.~_|_....|......:~..~~.:_.....|...~~.|......~:...._...
+
+1. Counting the number of narrow peaks (|) and wide peaks (:):
+   - Narrow peaks (|): 3 (counted at positions 2, 8, and 15)
+   - Wide peaks (:): 2 (counted at positions 6 and 17)
+
+2. Calculating the total number of peaks:
+   - Total peaks = Narrow peaks + Wide peaks + Baseline (.) = 3 + 2 + 8 = 13
+
+3. Classifying the heart rate based on the total number of peaks:
+   - Since there are 13 peaks, the heart rate is classified as Tachy (>100 bpm)
+
+The final output in JSON format would be:
+
+{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 13,
+  ""Label"": ""Tachy""
+}"
+......_........~.....:.....:._...:..~...:.~....|.~_.._:__...|.._.~.:..._~.:...~..|~....::...._:...._,Tachy,Brady,False,"To analyze the provided sequence, let's count the number of narrow (|) and wide (:) peaks, calculate the total number of peaks, and classify the heart rate based on the total number of peaks.
+
+Sequence: ......_........~.....:.....:._...:..~...:.~....|.~_.._:__...|.._.~.:..._~.:...~..|~....::...._:...._
+
+1. Count the total number of peaks, where each peak can be “|” or “:”.
+Narrow peaks (|): 4
+Wide peaks (:): 3
+Total peaks: 7
+
+2. Classify the heart rate according to the total number of peaks into one of the following classes:
+- Brady: 4–7 peaks (<60 bpm)
+- Normal: 8–11 peaks (60–100 bpm)
+- Tachy: 12–18 peaks (>100 bpm)
+
+In this case, the total number of peaks is 7, which falls within the Bradycardia range (4–7 peaks).
+
+3. The final output in JSON format would be:
+
+{
+  ""Narrow_peaks"": 4,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 7,
+  ""Label"": ""Brady""
+}"
+..~..~~...~.~...|...~..|...~.~:..~...|....~.:.~.~~.|_.....|...~~.|~.~...:...~.~|~.~.~_:~.~.~_|..~~..,Tachy,Normal,False,"{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 7,
+  ""Label"": ""Normal""
+}
+
+Explanation:
+In the provided sample, there are 5 narrow peaks (|) and 2 wide peaks (:). The total number of peaks is 7. Since the total number of peaks is between 8-11, the heart rate can be classified as Normal (60-100 bpm)."
+.....~.._..~............_:...._:....~:....:.._.|.....:...~.:....~|._..~|.....:.....|....:_..||....~.,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 5,
+  ""Label"": ""Brady""
+}
+
+Explanation:
+In the provided sample, there are three narrow peaks (|) and two wide peaks (:). The total number of peaks is 5. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+~~.~~_.....~_:~._..|~...~..|.....|....~|.~~.:....:..~.|....~:_~...|~.~..:.~..|...~.|._...:.~.~......,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."
+....._...~~..~.........~.|.....:...~.:.~._~~|~..._.|.._~_|_....:._.|.:~..|~|._..~|...._|..~.~.|._...,Tachy,Brady,False,"{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 4,
+  ""Label"": ""Brady""
+}
+
+Explanation: In the provided sample, there are three narrow peaks (|) and one wide peak (:). The total number of peaks is 4. Since the total number of peaks is less than or equal to 7, the heart rate can be classified as Bradycardia (slow heart rate)."

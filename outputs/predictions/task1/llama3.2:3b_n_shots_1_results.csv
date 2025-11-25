@@ -1,0 +1,2094 @@
+sequence,true_class,predicted_class,correct,raw_response
+......~...........~:.............:..~...._....|..............|..........~.|..~..........|...........,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+The given sample is:
+......~...........~:.............:..~...._....|..............|..........~.|..~..........|...........
+
+Let's count the total number of peaks:
+
+- Narrow peaks (|): 5
+- Wide peaks (:): 4
+- Total peaks: 9
+
+Now, let's classify the heart rate according to the total number of peaks:
+According to the rules provided:
+- If total peaks < 8 → classify as Brady.
+- If total peaks > 11 → classify as Tachy.
+- Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total peaks (9) is greater than 8 but less than 11, I will never classify it as Normal. However, since it's not within the range of Brady (< 7 peaks), I should look at the upper limit for Tachy (> 11 peaks). Since 9 is indeed above 11, according to the strict rule provided, this sample would be classified as Tachy.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Tachy""
+}"
+.~..._.~...._........|........._.....:~~._........__|.....~..........:.........._..__~:......~~.....,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sequence contains the following peaks: 
+- Narrow peak (|): 5
+- Wide peak (:): 3
+Total peaks: 8
+
+2. Classify the heart rate according to the total number of peaks:
+Based on the rule provided, if total peaks < 8 → classify as Brady.
+Since the total number of peaks is 8, which falls within the range for Normal.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Normal""
+}"
+...._......~.|....._.....~.._...:__~.~.._...._......|....._.~..........:.~......~...~....~.~....~._.,Brady,Brady,True,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks in the sequence:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* Total peaks < 8 → classify as Brady.
+	* Total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total peaks (9) is greater than 7 but less than 12, it does not fall into either of the extreme categories. Therefore, I will never classify this sample as Brady or Tachy.
+
+3. Based on the classification rules, the correct label for the sample is ""Normal"".
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Normal""
+}"
+...~.....~_.~...~~:.....~.._~.~~...|.~.~.....~....|~.~.....~.~~..:...~_...~........|.~....~.~.~...~~,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	* Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* If total peaks < 8 → classify as Brady.
+	* If total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is less than 8, I will classify it as Brady.
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+...........~.~._|..~......~.._.:...........~~..|......._..~....|.~....._._..._.|...~._...........~~.,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+First, let's count the total number of peaks in the sample:
+
+- Narrow peaks (|): 6
+- Wide peaks (:): 3
+- Total peaks: 9
+
+Now, let's classify the heart rate according to the total number of peaks:
+
+Since total peaks < 8 → classify as Brady.
+
+Therefore, my final thoughts are:
+
+{
+  ""Narrow_peaks"": 6,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+................~........|......_....._|....._~.....|.~...........:.............|...........|.......,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: 
+- Narrow peak (|): 4
+- Wide peak (:): 2
+Total peaks: 6
+
+2. Classify the heart rate according to the total number of peaks:
+Based on the rules provided, since the total number of peaks is less than 8, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 4,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 6,
+  ""Label"": ""Brady""
+}"
+.~...~...~....~_.....~...~|.~|_.........~.~._.~:~...~...~.......|...~.~..~...~~.|~._.....~~....~....,Brady,Brady,True,"After carefully analyzing the provided sample and comparing it to the features learned from the example samples, I have made the following observations:
+
+- Narrow peaks (|): The sequence contains 6 narrow peaks.
+- Wide peaks (:): The sequence contains 4 wide peaks.
+- Total peaks: The total number of peaks is 10.
+
+Based on these counts and considering the provided rules for classification:
+- If total peaks < 8 → classify as Brady.
+- If total peaks > 11 → classify as Tachy.
+- Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (10) is greater than 8 but less than 12, it does not fall into the ""Tachy"" category. However, since it's also not within the range for a normal classification, we must consider the next closest option based on the rules provided.
+
+Given that the sample has more than 7 peaks and fewer than 12, it doesn't fit neatly into any of the provided categories based strictly on the given ranges. However, according to the strict interpretation of the rules:
+
+- If total peaks < 8 → classify as Brady.
+- If total peaks > 11 → classify as Tachy.
+
+Since the sample's total peaks (10) are not within the ""Normal"" range but also do not meet the criteria for either ""Brady"" or ""Tachy"", we must acknowledge that it doesn't fit into any of the provided categories based on the strict rules given. 
+
+However, to follow the instructions and provide a classification within the constraints:
+
+{
+  ""Narrow_peaks"": 6,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 10,
+  ""Label"": ""Tachy""
+}
+
+This classification is somewhat arbitrary based on the strict rules provided but seems to be the closest fit given the options."
+~......_.._...~..........___.:..~._...........|.~_.._...|...._|~...............|.........~.~.......~,Brady,Brady,True,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks:
+	* Narrow peaks (|): 6
+	* Wide peaks (:): 3
+	* Total peaks: 9
+2. Classify the heart rate according to the total number of peaks:
+	* Since total peaks < 8, I will classify it as Brady.
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 6,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+.~~..............~.~_:.._....._....|...~.~.~...~.|.....~.......|~.~._...~.....:~....~._~~...|.......,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 3
+	* Total peaks: 8
+
+2. Classify the heart rate according to the total number of peaks:
+	* Since total peaks < 8, I will classify it as Brady.
+
+Based on my analysis, here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Brady""
+}"
+....__........_.._.........~.|_....._..._.|.._.....~..|.|..._....__..:..~.._..~_.._|..~........._...,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 3
+	* Total peaks: 8
+
+2. Classify the heart rate according to the total number of peaks:
+	* Since total peaks < 8, I will classify it as Brady.
+
+Based on my analysis, here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Brady""
+}"
+.....~......._...:.._...._~_|~......__.~~:............._.|..~.~.~~...~.~|.~......~~.~....~...._.....,Brady,Brady,True,"After carefully analyzing the provided sample, I have extracted the following information:
+
+- Narrow peaks (|): 7
+- Wide peaks (:): 5
+- Total peaks: 12
+
+Comparing this to the features learned about:
+- Brady: 4–7 peaks (<60 bpm)
+- Normal: 8–11 peaks (60–100 bpm)
+- Tachy: 12–18 peaks (>100 bpm)
+
+Since the total number of peaks is 12, which falls within the range of 8–11 peaks, I would classify this sample as ""Normal"".
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 5,
+  ""Total_peaks"": 12,
+  ""Label"": ""Normal""
+}"
+....._.........~........|.._.......:_..~..~.~...:.._.......~...|._.............|.........~.~..|._...,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: |, : (twice), and ~ (multiple times). However, for this analysis, we only consider narrow peaks (|) and wide peaks (:).
+
+Narrow peaks (|): 5
+Wide peaks (:): 2
+
+Total peaks: 7
+
+2. Classify the heart rate according to the total number of peaks:
+Based on the rules provided:
+
+* If total peaks < 8 → classify as Brady.
+* If total peaks > 11 → classify as Tachy.
+* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (7) is less than 8, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 7,
+  ""Label"": ""Brady""
+}"
+~...................|...~....~....:.._.~.....~.|....~~...~_...|...._...._...:._.._...~..~.:....~....,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: ~ (noise), | (narrow peak), : (wide peak), . (baseline), _ (artifact).
+Upon closer inspection, I can see that there are 7 narrow peaks and 3 wide peaks.
+Total peaks = Narrow peaks + Wide peaks = 10
+
+2. Classify the heart rate according to the total number of peaks:
+According to the rules provided:
+- If total peaks < 8 → classify as Brady.
+- If total peaks > 11 → classify as Tachy.
+- Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (10) is greater than 8, I will not classify it as Brady. However, since it's also greater than 11, I should classify it as Tachy.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 10,
+  ""Label"": ""Tachy""
+}"
+..~....._........~..~...~.~|..__....~~~~.|~........~.....|_.......~..~....|.......~......:....~.~...,Brady,Brady,True,"After carefully analyzing the provided sample and comparing it to the features learned from the example samples, I have made the following observations:
+
+- Narrow peaks (|): 6
+- Wide peaks (:): 2
+- Total peaks: 8
+
+Based on these counts, the classification of this sample falls into the ""Brady"" category since the total number of peaks is less than 8.
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 6,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 8,
+  ""Label"": ""Brady""
+}"
+_........~|.~..~.~.~~....:.~~....~.~.~...:_.~~....~.....|........_....~._:.~................~...~.~.,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+
+The sample contains the following peaks:
+- Narrow peak (|): 5
+- Wide peak (:): 2
+- Total peaks: 7
+
+2. Classify the heart rate according to the total number of peaks:
+
+Based on the rules provided, if total peaks < 8 → classify as Brady.
+If total peaks > 11 → classify as Tachy.
+Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (7) is less than 8, I will classify it as Brady.
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 7,
+  ""Label"": ""Brady""
+}"
+_...~.......|.~~...........:.~.._.._....~.|........_.._....|.~..~.._.......|._~........_..._....~...,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+First, let's count the total number of peaks in the sample:
+
+- Narrow peaks (|): 5
+- Wide peaks (:): 3
+- Total peaks: 8
+
+Now, let's classify the heart rate according to the total number of peaks:
+
+Since total peaks < 8, I will classify it as Brady.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Brady""
+}"
+.~...~.....~~.:.._.~..~...~|......~..:_....~~.........|..~.......|............:........~............,Brady,Brady,True,"To analyze the provided sample, I will follow the steps as outlined:
+
+1. Count the total number of peaks in the sequence:
+	* Narrow peaks (|): 6
+	* Wide peaks (:): 4
+	* Total peaks: 10
+
+2. Classify the heart rate according to the total number of peaks:
+	* If total peaks < 8 → classify as Brady.
+	* If total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+3. Based on the count, the sample has a total of 10 peaks, which falls outside the range for Normal (8-11) and Tachy (>11). Therefore, it must be classified as Brady since the total number of peaks is less than 8.
+
+4. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 6,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 10,
+  ""Label"": ""Brady""
+}"
+..._..........~.......~....|..............._|...........~..|................|...~............:....~.,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: 
+- Narrow peak (|): 5
+- Wide peak (:): 3
+Total peaks: 8
+
+2. Classify the heart rate according to the total number of peaks:
+Based on the rules provided, since total peaks < 8, I will classify the sample as Brady.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Brady""
+}"
+.._................~.~~....:.~...~.._~.~:~..~.~...~...|...~.~..~.~_.|~.._~....~~.|.._..~....~.:..~..,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+First, let's count the total number of peaks in the sample:
+
+* Narrow peaks (|): 5
+* Wide peaks (:): 6
+* Total peaks: 11
+
+Now, let's classify the heart rate according to the total number of peaks:
+
+Since the total number of peaks is between 8 and 11, I will never classify it as Brady or Tachy. According to the rule, if total peaks < 8 → classify as Brady, and if total peaks > 11 → classify as Tachy.
+
+Next, let's look at the sample again:
+
+.._................~.~~....:.~...~.._~.~:~..~.~...~...|...~.~..~.~_.|~.._~....~~.|.._..~....~.:..~..
+
+I notice that there are 11 peaks in total, which falls within the range of 8-11 peaks.
+
+Based on this analysis, I conclude that the sample corresponds to a heart rate classification of:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 6,
+  ""Total_peaks"": 11,
+  ""Label"": ""Normal""
+}"
+..~.~......_.......~.|~~...~...~...|.~.._.~~..~..|...~..__......|....._~..~~:...._.~~~_.~|..~...~...,Brady,Brady,True,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks in the sequence:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* Total peaks < 8 → classify as Brady.
+	* Total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total peaks (9) is greater than 7 but less than 12, it does not fall into either of the extreme categories. Therefore, I will never classify this sample as Brady or Tachy.
+
+3. Based on the classification rule, since the total peaks (9) falls within the range of 8 to 11, I will classify this sample as Normal.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Normal""
+}"
+..~_._......~......~~~.~..._~|.._..~~.._~...~.~~~.:.~..~_..___...~..~|._._....~.~.~__~...|~~...~~...,Brady,Brady,True,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks:
+	* Narrow peaks (|): 7
+	* Wide peaks (:): 3
+	* Total peaks: 10
+2. Classify the heart rate according to the total number of peaks:
+	* Since total peaks < 8, I will classify it as Brady.
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 10,
+  ""Label"": ""Brady""
+}"
+..~....._.~_.|......_._....~~.._.:~.~......~...~...|.~.._...._..._..~~|_~~.~.._..~.~..._~..._...._..,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: 
+- Narrow peak (|): 6
+- Wide peak (:): 3
+Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+According to the rules provided, if total peaks < 8 → classify as Brady.
+If total peaks > 11 → classify as Tachy.
+Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the sample has a total of 9 peaks, which is less than 8, it falls into the ""Brady"" category.
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 6,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+.....~..~.._~.:....~..~._.....|__....~.~.~.._.:_~~....~..._...|.~_~.~..~.~.~...|~.._....~..._._...~.,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+First, let's count the total number of peaks in the sample:
+
+- Narrow peaks (|): 5
+- Wide peaks (:): 4
+- Total peaks: 9
+
+Now, let's classify the heart rate according to the total number of peaks:
+
+Since the total number of peaks is less than 8, I will classify it as Brady.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+......~...~......_.~|..._...~.~.~....:...............:......~.......~|~._..._.~......:~...~......~..,Brady,Brady,True,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks:
+	* Narrow peaks (|): 6
+	* Wide peaks (:): 4
+	* Total peaks: 10
+2. Classify the heart rate according to the total number of peaks:
+	* If total peaks < 8 → classify as Brady.
+	* If total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Based on the count, the sample has a total of 10 peaks. Since it's greater than 7 but less than 12, I will not classify it as Brady or Tachy immediately. However, since it doesn't meet the criteria for Normal (8-11 peaks), I need to further evaluate the classification.
+
+Upon re-examining the sample, I notice that it has a relatively high number of wide peaks (4) compared to narrow peaks (6). This might indicate an abnormal heart rate pattern.
+
+Considering these observations and the provided rules, I will classify this sample as Tachy.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 6,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 10,
+  ""Label"": ""Tachy""
+}"
+....~~....~....._._|.._............:....~........~...|.....~~...._...:...~.....~..~_.|~....~........,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+First, let's count the total number of peaks in the sample:
+
+- Narrow peaks (|): 5
+- Wide peaks (:): 4
+- Total peaks: 9
+
+Now, let's classify the heart rate according to the total number of peaks:
+
+Since the total number of peaks is less than 8, I will classify it as Brady.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+........~...~~..._......|.....~..~._.~.....|.~.....~...._._~...:..._......__...~..|......~..~~~.._._,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: ~ (2), _ (3), | (4), : (1). Therefore, the total number of peaks is 10.
+
+2. Classify the heart rate according to the total number of peaks:
+According to the rules provided:
+
+* If total peaks < 8 → classify as Brady.
+* If total peaks > 11 → classify as Tachy.
+* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (10) is greater than 8, but less than 12, it does not fall into the ""Tachy"" category. However, since it's also not within the range for a normal classification, I will look at the next closest range which is Brady.
+
+3. Determine the correct label:
+Based on the rules provided and the total number of peaks (10), the sample should be classified as Brady because 10 falls between 4-7 peaks (<60 bpm).
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 4,
+  ""Wide_peaks"": 1,
+  ""Total_peaks"": 10,
+  ""Label"": ""Brady""
+}"
+.~.~.__...._|....~~...._..:...........__:.._~.~.._.~|....._~...~..|_~~..........:...................,Brady,Brady,True,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks (| and :).
+2. Classify the heart rate according to the total number of peaks.
+
+The sample is: .~.~.__...._|....~~...._..:...........__:.._~.~.._.~|....._~...~..|_~~..........:...................
+
+Let's count the peaks:
+
+- Narrow peaks (|): 5
+- Wide peaks (:): 3
+
+Total peaks: 8
+
+Now, let's classify the heart rate according to the total number of peaks:
+Since total peaks < 8 → classify as Brady.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Brady""
+}"
+~....~...~..~..~..~...~.~.|...~..~......|.....~....~.~.|~.~..:~.....:.~_.~.......|.~..~..~..~~..~...,Brady,Unknown,False,"To analyze the provided sample, I will follow the steps as instructed.
+
+1. Count the total number of peaks in the sequence:
+The sequence contains the following peaks: ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~"
+....._._....~~....|...............:..............|._...._.._..~...|............~....._.|............,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned about each class.
+
+First, let's count the total number of peaks in the sample:
+
+- Narrow peaks (|): 5
+- Wide peaks (:): 3
+- Total peaks: 8
+
+Now, let's classify the heart rate according to the total number of peaks:
+
+Since total peaks < 8, I will classify it as Brady.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Brady""
+}"
+.~.~..........._......~._|....~...__.__.|~......~..._~.|..._............|_...._..~_.._..:...._......,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 3
+	* Total peaks: 8
+
+2. Classify the heart rate according to the total number of peaks:
+
+According to the rules provided, if total peaks < 8 → classify as Brady.
+Since the total number of peaks in this sample is 8, which falls within the range for Normal.
+
+3. Generate the output in JSON format:
+```
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Normal""
+}
+```"
+....~...............~.~:.........~.~:..~..~.......:......~_..~|..~~~....~..|.....~..~~..:...........,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+First, let's count the total number of peaks in the sample:
+
+- Narrow peaks (|): 5
+- Wide peaks (:): 4
+- Total peaks: 9
+
+Now, let's classify the heart rate based on the total number of peaks:
+
+Since the total number of peaks is less than 8, I will classify it as Brady.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+..........:..._.._~..~....~.|__.~_........~_.._~|..~.~..~~.......|.~~...~....~~~~.:...~.....~...~...,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	* Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* If total peaks < 8 → classify as Brady.
+	* If total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is less than 8, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+.~...~....~:...~~.......~~:._..~..~..~.|~..~~....~..~:..~...~.~..~:.....~~_.~.~|...~._....~...~_....,Brady,Brady,True,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+First, let's count the total number of peaks in the sample:
+
+* Narrow peaks (|): 7
+* Wide peaks (:): 5
+* Total peaks: 12
+
+Now, let's classify the heart rate according to the total number of peaks:
+
+Since the total peaks are between 8 and 11, I will never classify it as Brady or Tachy. According to the rule, if total peaks < 8 → classify as Brady, and if total peaks > 11 → classify as Tachy.
+
+Next, let's look at the sample again: .~...~....~:...~~.......~~:._..~..~..~.|~..~~....~..~:..~...~.~..~:.....~~_.~.~|...~._....~...~_....
+
+I notice that there are 7 narrow peaks and 5 wide peaks, which gives a total of 12 peaks.
+
+Based on the classification rules:
+
+* Total peaks: 12
+* Narrow peaks (|): 7
+* Wide peaks (:): 5
+
+Since the total peaks are between 8 and 11, I will classify it as Normal.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 5,
+  ""Total_peaks"": 12,
+  ""Label"": ""Normal""
+}"
+~.....~....~...|.~....._~|.~~..~.~.:~~.~.~~..~:.~..._.:...._..|...~.~..~.:.......~..:....._.~....~..,Normal,Unknown,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: ~, ~, ~, ~, ~, ~, |, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~,"
+...........~..~_~.|....~~~_.:~~......_.:~_.~_....:~~..~..:|~...__...|.._..~~_.:_......_.|..~.~.~~..~,Normal,Brady,False,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks (| and :).
+2. Classify the heart rate according to the total number of peaks.
+
+Sample: ...........~..~_~.|....~~~_.:~~......_.:~_.~_....:~~..~..:|~...__...|.._..~~_.:_......_.|..~.~.~~..~
+
+Breaking down the sample:
+
+- Narrow peaks (|): 7
+- Wide peaks (:): 5
+- Total peaks: 12
+
+Comparing this to the features learned about:
+- Brady: 4–7 peaks (<60 bpm)
+- Normal: 8–11 peaks (60–100 bpm)
+- Tachy: 12–18 peaks (>100 bpm)
+
+Since the total number of peaks is 12, which falls within the range of 12–18, I will classify this sample as ""Tachy"".
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 5,
+  ""Total_peaks"": 12,
+  ""Label"": ""Tachy""
+}"
+.........~_._.:.~.....|~......|~.......:..~.....|.......:.......|...~....|.......|~...~...|.._......,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 3
+	* Total peaks: 8
+
+2. Classify the heart rate according to the total number of peaks:
+	* Since total peaks < 8, I will classify it as Brady.
+
+Based on my analysis, here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Brady""
+}"
+.............:..~..._..~.~.._:.......~.~:........:._.~.....:.........|........~..:........|.........,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains 7 narrow peaks (|) and 5 wide peaks (:).
+
+2. Calculate the total number of peaks:
+Total peaks = Narrow peaks + Wide peaks
+= 7 + 5
+= 12
+
+3. Classify the heart rate based on the total number of peaks:
+According to the rules, if total peaks < 8 → classify as Brady.
+If total peaks > 11 → classify as Tachy.
+Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (12) is greater than 11, I will classify it as Tachy.
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 5,
+  ""Total_peaks"": 12,
+  ""Label"": ""Tachy""
+}"
+........~...~.:.....~.....|...~~.~~..:..._..~..:........~:~.~..~...~:.~~.~~...|....._...~|..........,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	* Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+
+Since the total number of peaks is less than 8, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+```
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}
+```"
+.._.............~_.~.|.:....._..:....._....|..._...__:......_...:..~._...~|......~..:.._~..._....~..,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+
+The sample is: .._.............~_.~.|.:....._..:....._....|..._...__:......_...:..~._...~|......~..:.._~..._....~..
+
+I will count the narrow peaks (|) and wide peaks (:).
+
+Narrow peaks (|): 7
+Wide peaks (:): 4
+
+Total peaks: 11
+
+2. Classify the heart rate according to the total number of peaks:
+
+According to the rules:
+- If total peaks < 8 → classify as Brady.
+- If total peaks > 11 → classify as Tachy.
+- Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total peaks (11) is greater than 8, but less than 12, I will not classify it as Tachy. However, since it's exactly at the boundary of the ""Normal"" range, I will consider it as ""Normal"".
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 11,
+  ""Label"": ""Normal""
+}"
+~_..~........~.~.~.....~.|..__~..:~...__~~:._..._.|_...~~.:~_~~.~_:~..~.~.|....~..:~...~|~:.....~.~_,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 3
+	* Total peaks: 8
+
+2. Classify the heart rate according to the total number of peaks:
+	* Since total peaks < 8, I will classify it as Brady.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Brady""
+}"
+....~..........~...~...:..|._...:..~....:.~._....:...~..~:........|~._.~..:.._.....|.~_~_~...|...~_~,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	* Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+
+According to the rules provided, if total peaks < 8 → classify as Brady.
+If total peaks > 11 → classify as Tachy.
+Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is greater than 7 but less than 11, it does not meet the criteria for either Brady or Tachy. Therefore, I will never classify this sample as Normal.
+
+However, since the total number of peaks (9) is also greater than 8 and less than 11, it meets the criteria for a specific classification that was not explicitly listed in the initial rules. Upon re-examining the provided examples, I notice that Example 1 has a total of 9 peaks, which falls into the ""Normal"" category.
+
+Therefore, based on the available information and the provided examples, I will classify this sample as Normal.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Normal""
+}"
+..._.....~.~~..~._....~~.|~.~~.~.~.|.~~...._:_....~~~.|~.....~.:~...~..~.|~.~...|~:....~...~|.~.~...,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 6
+	Total peaks: 11
+
+2. Classify the heart rate according to the total number of peaks:
+	* If total peaks < 8 → classify as Brady.
+	* If total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (11) is greater than 11, I will classify it as Tachy.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 6,
+  ""Total_peaks"": 11,
+  ""Label"": ""Tachy""
+}"
+~.~................~~.~.~.:..~.....|.......~:|....~...|.........|......~..|.~......~:.....~..:~.....,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: ~.~ (1), :..~.....|.......~:|....~...|.........|......~..|.~......~:.....~..:~.. (8)
+Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+Since the total number of peaks is less than 8, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+...~~._.~~....|..~......|...~......:..~....~.|..~..~...:~.........|..........|.....~...|~...........,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	* Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* If total peaks < 8 → classify as Brady.
+	* If total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is less than 8, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+.~...~.....~~...~..|.~.......:~~......|.~.~~~..~.:.......:.......~.:..........:~.~....~_.|..........,Normal,Brady,False,"After carefully analyzing the provided sample and comparing it to the features learned from the example samples, I have made the following observations:
+
+- Narrow peaks (|): 6
+- Wide peaks (:): 3
+- Total peaks: 9
+
+Based on the classification rules:
+- If total peaks < 8 → classify as Brady.
+- If total peaks > 11 → classify as Tachy.
+- Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is greater than 7 but less than 12, it does not fall into either the ""Brady"" or ""Tachy"" categories. Therefore, according to the rules provided, this sample should be classified as ""Normal"".
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 6,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 9,
+  ""Label"": ""Normal""
+}"
+.~.~..~~....~......|.~....._.|..._._....|._..~._..|.~~....~|_~....~._:~....~..|..._....|..._._..~...,Normal,Tachy,False,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks (| and :).
+2. Classify the heart rate according to the total number of peaks.
+
+The sample is: .~.~..~~....~......|.~....._.|..._._....|._..~._..|.~~....~|_~....~._:~....~..|..._....|..._._..~...
+
+Let's count the peaks:
+
+- Narrow peaks (|): 7
+- Wide peaks (:): 5
+
+Total peaks: 12
+
+Now, let's classify the heart rate according to the total number of peaks:
+Since total peaks > 11, I will classify it as Tachy.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 5,
+  ""Total_peaks"": 12,
+  ""Label"": ""Tachy""
+}"
+~~....~.~....~..~....~..~..|...~|.~~~|.....~..~|.~.....|~....~~..|...~._~.~|...~...|...~~~..:..~.~.~,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sequence contains the following peaks: ~ (10 times), | (5 times), and : (2 times). However, since ~ represents noise, I will only count the narrow peaks (|) and wide peaks (:).
+
+Narrow peaks (|): 5
+Wide peaks (:): 2
+
+Total peaks: 7
+
+2. Classify the heart rate according to the total number of peaks:
+Since the total number of peaks is less than 8, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 7,
+  ""Label"": ""Brady""
+}"
+.._...........|.........|......~.|.._....|.........:.|........|.........:._.~.....|.~.~.......:~....,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The narrow peaks (|) are: .._...........|.........|......~.|.._....|.........:.|........|.........:._.~.....|.~.~.......:~....
+There are 7 narrow peaks.
+The wide peaks (: ) are not present in this sequence.
+
+2. Classify the heart rate according to the total number of peaks:
+Total peaks = 7 (narrow peaks)
+Since total peaks < 8, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 7,
+  ""Label"": ""Brady""
+}"
+~......_....~.....~.._.~.....|....._~|...._...:..._...:..~....~|...~.~..:.|~....:..|...._|~.....~...,Normal,Brady,False,"After carefully analyzing the provided sample and comparing it to the features learned from the example samples, I have made the following observations:
+
+- Narrow peaks (|): The sequence contains 6 narrow peaks.
+- Wide peaks (:): The sequence contains 2 wide peaks.
+- Total peaks: The total number of peaks in the sequence is 8.
+
+Based on these counts and comparing them to the provided classification rules:
+- If total peaks < 8 → classify as Brady.
+- Never classify as Normal unless total peaks are between 8 and 11.
+- If total peaks > 11 → classify as Tachy.
+
+Since the sample has a total of 8 peaks, which falls within the range for ""Normal"", I will not classify it as either Brady or Tachy. Therefore, the classification is:
+
+{
+  ""Narrow_peaks"": 6,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 8,
+  ""Label"": ""Normal""
+}"
+.__....~._.~...:.._.......:.......~_:__._.._...|........:......_.~|_.........:_......~|...~.._|..._.,Normal,Brady,False,"After carefully analyzing the provided sample and comparing it to the features learned from the example samples, I have made the following observations:
+
+- Narrow peaks (|): The sequence contains 6 narrow peaks.
+- Wide peaks (:): The sequence contains 2 wide peaks.
+- Total peaks: The total number of peaks in the sequence is 8.
+
+Based on these counts and considering the provided rules for classification:
+- If total peaks < 8 → classify as Brady.
+- Never classify as Normal unless total peaks are between 8 and 11.
+- If total peaks > 11 → classify as Tachy.
+
+Since the sample has a total of 8 peaks, which falls within the range of 8 to 11, it should be classified as ""Normal"".
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 6,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 8,
+  ""Label"": ""Normal""
+}"
+.~.~..._.~:....._...|..._~~.~.|_..~_....|_.......~~|......_..~|.~....~..|..._..~...:~......~.~...~..,Normal,Brady,False,"After carefully analyzing the provided sample and comparing it to the features learned from the example samples, I have made the following observations:
+
+- Narrow peaks (|): The sequence contains 7 narrow peaks.
+- Wide peaks (:): The sequence contains 5 wide peaks.
+- Total peaks: The total number of peaks is 12.
+
+Based on these counts and considering the classification rules provided earlier:
+- If total peaks < 8 → classify as Brady.
+- If total peaks > 11 → classify as Tachy.
+- Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (12) is greater than 11, according to the classification rules, the sample should be classified as ""Tachy"".
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 5,
+  ""Total_peaks"": 12,
+  ""Label"": ""Tachy""
+}"
+._......._~.|..~..~._..:..._.....|....._~~.:....~~._..|..~....._.|~_._......|........|.._....~..._..,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: 
+- Narrow peak (|): 5
+- Wide peak (:): 2
+Total peaks: 7
+
+2. Classify the heart rate according to the total number of peaks:
+Based on the rule provided, if total peaks < 8 → classify as Brady.
+Since 7 is less than 8, I will classify this sample as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 7,
+  ""Label"": ""Brady""
+}"
+~...~.........~...~:...~~..:.........|...|.....|......_..|.........|...~.......|..~~...|............,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 3
+	* Total peaks: 8
+
+2. Classify the heart rate according to the total number of peaks:
+	* Since total peaks < 8, I will classify it as Brady.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Brady""
+}"
+.~__..._......:...._...|..~...~..|...._...:........:..~.~.~_:~._.~~..:..~..~.~.:.~.~....|...........,Normal,Brady,False,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* Total peaks < 8 → classify as Brady.
+	* Total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total peaks (9) is greater than 7 but less than 12, it falls into the ""Normal"" category. However, I will check if there's a narrow peak count that would shift the classification to Brady or Tachy.
+
+3. Check for narrow peaks:
+	* Narrow peaks (|): 5
+
+Since the total number of peaks is exactly at the boundary between Normal and Tachy, but the narrow peak count is higher than the minimum required for Brady, I will classify it as ""Normal"".
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Normal""
+}"
+.~...........~.:.~..._....|.........|.._...~_.:.~......~|.._.......|.........~.|....~...|...........,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 3
+	Total peaks: 8
+
+2. Classify the heart rate according to the total number of peaks:
+	* Since total peaks < 8, I will classify it as Brady.
+
+Now, let's generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Brady""
+}"
+..........~_.~..........|.....~...:~.._.~~|......~:..~.~.._.:.:......|.:.~...~~:_......:...~........,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	* Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* If total peaks < 8 → classify as Brady.
+	* If total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is less than 8, I will classify it as Brady.
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+........~..|.~~.~..~.|~..._....~|.....~...:~.......:._.._....|..~~......:......_...:...~....._......,Normal,Brady,False,"After carefully analyzing the provided sample and comparing it to the features learned from the example samples, I have made the following observations:
+
+- Narrow peaks (|): The sequence contains 6 narrow peaks.
+- Wide peaks (:): The sequence contains 4 wide peaks.
+- Total peaks: The total number of peaks in the sequence is 10.
+
+Based on these counts and comparing them to the classification rules provided earlier:
+- If total peaks < 8 → classify as Brady.
+- If total peaks > 11 → classify as Tachy.
+- Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (10) is greater than 8 but less than 11, it does not fall into the ""Brady"" category. However, it also does not meet the criteria for the ""Normal"" category since it's outside the specified range. Therefore, according to the provided rules, this sequence should be classified as Tachy.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 6,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 10,
+  ""Label"": ""Tachy""
+}"
+.._.._......_....~...........|~._...._~~:..........|........~~:...~....~|.~~|.~...|.~.......~|....~~,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The narrow peaks (|) are: .._.._......_....~...........|~._...._~~
+There are 7 narrow peaks.
+
+The wide peaks (: ) are: :..........|........~~:...~....~|.~~|.~...|.~.......~
+There are 5 wide peaks.
+
+Total peaks = Narrow peaks + Wide peaks = 7 + 5 = 12
+
+2. Classify the heart rate according to the total number of peaks:
+According to the rules, if total peaks < 8 → classify as Brady.
+If total peaks > 11 → classify as Tachy.
+Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total peaks (12) is greater than 11, I will classify it as Tachy.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 5,
+  ""Total_peaks"": 12,
+  ""Label"": ""Tachy""
+}"
+._....~.~....._..~.|_....~.~|_.....~.:...._...|_....._..|..~.~...|~.......:....~...~:........:._..._,Normal,Brady,False,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks in the sequence:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* Total peaks < 8 → classify as Brady.
+	* Total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is greater than 7 but less than 12, it does not fall into either the ""Brady"" or ""Tachy"" categories. Therefore, according to the provided rules, this sample should be classified as ""Normal"".
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Normal""
+}"
+.~......~.........~.........~|........~..|.~...~....|........:|....._.:........:.......|.......~...~,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+First, let's count the total number of peaks in the sample:
+
+* Narrow peaks (|): 5
+* Wide peaks (:): 3
+* Total peaks: 8
+
+Now, let's classify the heart rate according to the total number of peaks:
+
+Since the total number of peaks is less than 8, I will classify it as Brady.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Brady""
+}"
+.~...........~|......_.:....~...:.~.....:_~..~..:_.......:.......~|......._|...._..|.......|~..~....,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 3
+	Total peaks: 8
+
+2. Classify the heart rate according to the total number of peaks:
+	* If total peaks < 8 → classify as Brady.
+	* Since the total peaks are 8, which is within the range for Normal.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Normal""
+}"
+................~:...~...:..._.....|.~......|....._..|.....~_|.......:..._.|~.|...~~._.|~..~...~....,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 3
+	* Total peaks: 8
+
+2. Classify the heart rate according to the total number of peaks:
+	* If total peaks < 8 → classify as Brady.
+	* Since the total peaks are 8, which is within the range for Normal.
+
+Based on the analysis, I conclude that:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Normal""
+}"
+......._........._._.....|.._.....|......~..|...~.._.|........_:.._...~...|.........:........:~.....,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 6
+	* Wide peaks (:): 3
+	Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* Total peaks < 8 → classify as Brady.
+	* Total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total peaks (9) is greater than 7 but less than 12, it does not fall into either of the extreme categories. Therefore, I will never classify this sample as Brady or Tachy based on the strict rules provided.
+
+However, since the total peaks (9) falls within the range of 8 to 11, I can classify this sample as Normal.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 6,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 9,
+  ""Label"": ""Normal""
+}"
+.~...........~...:.......:........|..~..~~.|.._.....|....._.~|...~.~..|.~...~.:~.._~...|.._~~|._....,Normal,Brady,False,"After carefully analyzing the provided sample, I have extracted the following information:
+
+- Narrow peaks (|): 6
+- Wide peaks (:): 4
+- Total peaks: 10
+
+Based on the classification rules:
+- If total peaks < 8 → classify as Brady.
+- If total peaks > 11 → classify as Tachy.
+- Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (10) is greater than 8 but less than 12, it does not fall into the ""Tachy"" category. Therefore, according to the rules provided, this sample should be classified as ""Normal"".
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 6,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 10,
+  ""Label"": ""Normal""
+}"
+........._......|......_.|........:.......:_.._.._.:......~..|.~.....:....__.:......_|...~...:......,Normal,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 3
+	* Total peaks: 8
+
+2. Classify the heart rate according to the total number of peaks:
+	* Since total peaks < 8, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Brady""
+}"
+......................~....|..........:..........:_.......:|..........|_........|..._......|..~...~.,Normal,Brady,False,"After carefully analyzing the provided sample and comparing it to the features learned from the example samples, I have made the following observations:
+
+- Narrow peaks (|): 4
+- Wide peaks (:): 2
+- Total peaks: 6
+
+Based on the classification rules:
+- If total peaks < 8 → classify as Brady.
+- Never classify as Normal unless total peaks are between 8 and 11.
+- If total peaks > 11 → classify as Tachy.
+
+Since the total number of peaks (6) is less than 8, it falls under the category of Brady. Therefore, my final classification for this sample is:
+
+{
+  ""Narrow_peaks"": 4,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 6,
+  ""Label"": ""Brady""
+}"
+.....~..~.......~...~|.~...:~....:..._~.|...~.:~..~~.|.~...|.....:.~.|.|...:~|~...~|.....|~....._.~.,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* Total peaks < 8 → classify as Brady.
+	* Total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total peaks (9) is not within the range of 8-11, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+...~.........._...:_~.~_|.~..|..~..|....|._...:...|.:....|....~|~.._.|...._|..~..|.....|...~.|.....~,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: 
+- Narrow peak (|): 5
+- Wide peak (:): 4
+Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+Based on the rules provided, since the total peaks are less than 8, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+.........~_......_.~.:....~|..~~..:...~._|~.~~~.:..._.|~...:.|.....:......|.._...|__...:.~.~~.:~~...,Tachy,Brady,False,"After carefully analyzing the provided sample, I have extracted the following information:
+
+- Narrow peaks (|): 7
+- Wide peaks (:): 5
+- Total peaks: 12
+
+Comparing these features to the patterns learned from the example samples:
+- Brady: 4–7 peaks (<60 bpm)
+- Normal: 8–11 peaks (60–100 bpm)
+- Tachy: 12–18 peaks (>100 bpm)
+
+Since the total number of peaks (12) falls within the range of 8–11, I would classify this sample as ""Normal"".
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 5,
+  ""Total_peaks"": 12,
+  ""Label"": ""Normal""
+}"
+.......~_.....|..._.|......|.....|.......|....|..._...|._....|__...|...~|.~._..:.._...:.....~.......,Tachy,Brady,False,"After carefully analyzing the provided sample and comparing it to the features learned from the example samples, I have made the following observations:
+
+- Narrow peaks (|): The sequence contains 7 narrow peaks.
+- Wide peaks (:): The sequence does not contain any wide peaks.
+- Total peaks: The total number of peaks in the sequence is 13.
+
+Based on these observations and considering the provided rules for classification:
+- If total peaks < 8 → classify as Brady.
+- If total peaks > 11 → classify as Tachy.
+- Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (13) is greater than 11, I would classify this sample as ""Tachy"".
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 0,
+  ""Total_peaks"": 13,
+  ""Label"": ""Tachy""
+}"
+..~......~:.._~..:.._...:.._.._|..~~..|.~....:.....|._...~:......:.....|~~~._.:......:.~._..:..~....,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: 
+- Narrow peak (|): 5
+- Wide peak (:): 2
+Total peaks: 7
+
+2. Classify the heart rate according to the total number of peaks:
+Based on the rule provided, if total peaks < 8 → classify as Brady.
+Since 7 is less than 8, I will classify this sample as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 7,
+  ""Label"": ""Brady""
+}"
+....~~............_.~.......|.....~|..~....|......:....|.......|._...|....:....:..:..~|:.._..|....~~,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* Total peaks < 8 → classify as Brady.
+	* Total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is not within the range of 8-11, I will classify it based on the strict rules:
+
+Total peaks < 8 → classify as Brady.
+
+3. Generate the output in JSON format:
+```
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}
+```"
+..._...~.~...|..~..|~.....:...~~~|~...~|.~...|.~~.|~.._.|.....|:..~..|....~~:.~...|.....|..~....~.~.,Tachy,Tachy,True,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks:
+	* Narrow peaks (|): 7
+	* Wide peaks (:): 5
+	* Total peaks: 12
+2. Classify the heart rate according to the total number of peaks:
+	* Since total peaks > 11, I will classify it as Tachy.
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 5,
+  ""Total_peaks"": 12,
+  ""Label"": ""Tachy""
+}"
+..........._...~:.~....~|.~...~.:_....|.._...:.~.....:~......:.......|.._..|......:......:..|.~.....,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks in the sequence:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* Total peaks < 8 → classify as Brady.
+	* Total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is greater than 7 but less than 12, it falls into the ""Normal"" category.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Normal""
+}"
+._..........~...:_....:.....|.....|.....|.._..:.....|..|..|......|.~...:._...|.._..|~_.~.:.....~.._.,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 2
+	Total peaks: 7
+
+2. Classify the heart rate according to the total number of peaks:
+	* Total peaks < 8 → classify as Brady.
+	* Total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (7) is less than 8, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 2,
+  ""Total_peaks"": 7,
+  ""Label"": ""Brady""
+}"
+...~~.~~~~._....~.|.~~.~_|_~~..:..~..|..~..:~~.._~:..~~.:...._.:_.~.|.~.._.|...~.|....~:_.~..:....~.,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	* Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* If total peaks < 8 → classify as Brady.
+	* If total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is less than 8, I will classify it as Brady.
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+...............|.~..~.|....|~~._.|......|......:....~.|.....|...~.|..~..~:......|....~.|......|.....,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	Total peaks: 9
+
+2. Classify the heart rate based on the total number of peaks:
+	* Total peaks < 8 → classify as Brady.
+	* Total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is greater than 7, but less than 12, it falls into the ""Normal"" category. However, since it's not exactly between 8 and 11, I will consider it as ""Normal"".
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Normal""
+}"
+.._.....~.........:.....:.....|.....|.....|.....|.....|._...:...~.|..~..:~...:....._:.....|.........,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* Total peaks < 8 → classify as Brady.
+	* Total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is greater than 7, but less than 12, it does not fall into either the ""Brady"" or ""Tachy"" categories. Therefore, according to the strict rule provided, the sample should be classified as Normal.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Normal""
+}"
+....~.~......~......~.....|..|....:.|....~.:..~._.|....~..|.~~...|....~.|~......:......|......|.....,Tachy,Normal,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: |, :, ~, _, . (4 times), : (3 times), ~ (2 times). However, since we are only interested in narrow and wide peaks, I will ignore the ~ symbols.
+So, Narrow_peaks = 5
+Wide_peaks = 3
+
+Total_peaks = Narrow_peaks + Wide_peaks = 8
+
+2. Classify the heart rate according to the total number of peaks:
+Since Total_peaks is between 8 and 11 (inclusive), I will classify it as Normal.
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 8,
+  ""Label"": ""Normal""
+}"
+..~.......~.~.:....:~~.|_._..|..~..:....|....:....~:...~.:..~..:.....:.._.:.~...|~....:..~..|.~~....,Tachy,Normal,False,"After carefully analyzing the provided sample and comparing it to the features learned from the example samples, I have made the following observations:
+
+- Narrow peaks (|): 7
+- Wide peaks (:): 3
+- Total peaks: 10
+
+Based on these counts, the total number of peaks falls within the range of 8-11. Therefore, according to the strict rules provided, this sample should be classified as ""Normal"".
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 10,
+  ""Label"": ""Normal""
+}"
+........_.........._...~:.._..~.:..~~..::.~._.:~|.....:.:..._....:~.....:...~....|......|~..._.._~..,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	* Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* If total peaks < 8 → classify as Brady.
+	* If total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is less than 8, I will classify it as Brady.
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+.....~._......_.:......:...~..:.._..|.....|.....~|.....:.._...:..._..:..:..~|.~....:......:......_..,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: ~ (2), : (4), | (3).
+
+Total peaks: 2 + 4 + 3 = 9
+
+2. Classify the heart rate according to the total number of peaks:
+
+According to the rules, if total peaks < 8 → classify as Brady.
+If total peaks > 11 → classify as Tachy.
+Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total peaks (9) is not less than 8 but also not greater than 11, I will check the narrow peak count to make a final decision. The sample has 3 narrow peaks (|).
+
+According to the rules, if total peaks are between 8 and 11, then classify as Normal.
+
+Therefore, the classification for this sample is: Normal
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 3,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Normal""
+}"
+_..~.......~..~..~~.....__:..._.|.._.|:.~_.|:~...~|.....|.....|.....|.....:._..:...~:..~.:.._.|.....,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+First, let's count the total number of peaks in the sample:
+
+- Narrow peaks (|): 5
+- Wide peaks (:): 4
+- Total peaks: 9
+
+Now, let's classify the heart rate according to the total number of peaks:
+
+Since the total number of peaks is less than 8, I will classify it as Brady.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+......~_.~_....~...~.:.....:...~||..~.:|...|..:...:......:.~..:......:.....|.....|~~....:._.........,Tachy,Brady,False,"After carefully analyzing the provided sample, I have extracted the following information:
+
+- Narrow peaks (|): 7
+- Wide peaks (:): 5
+- Total peaks: 12
+
+Comparing this to the features learned about:
+- Brady: 4–7 peaks (<60 bpm)
+- Normal: 8–11 peaks (60–100 bpm)
+- Tachy: 12–18 peaks (>100 bpm)
+
+Since the total number of peaks is 12, which falls within the range of 8–11 peaks, I would classify this sample as ""Normal"".
+
+Here's the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 5,
+  ""Total_peaks"": 12,
+  ""Label"": ""Normal""
+}"
+...........~.~....~......:.....|...|.:.~|.:~.._.:.._.|..~..|~._...:....:......|.~....:.~...|..~~....,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+
+The sample contains the following peaks:
+- Narrow peak (|): 5
+- Wide peak (:): 4
+Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+
+Based on the rules provided, since the total number of peaks is less than 8, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+.~......~...~|.~...|.....|:_.~..:...~.|.....:......|.~...:..~.~.|.~...:..~..|~.~~..:~.~~..|...~.....,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: 
+- Narrow peak (|): 5
+- Wide peak (:): 4
+Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+Based on the rules provided, since the total number of peaks is less than 8, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+.....~_..........|_~...|~.....|.....:.._~..:.~_.~.|....|.|.~..~|..~...|..~..:..~.~.|......|.........,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	* Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+
+According to the rules provided, if total peaks < 8 → classify as Brady.
+If total peaks > 11 → classify as Tachy.
+Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is greater than 7 but less than 12, it does not fall into either the ""Brady"" or ""Tachy"" categories. Therefore, according to the rules, the sample should be classified as ""Normal"".
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Normal""
+}"
+.~.........~......~..:.....~:.....:_.~~..:.....|...~.:~..._:.....:.....|_..~.:|~...|:....:~.~_....~~,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* If total peaks < 8 → classify as Brady.
+	* If total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is less than 8, I will classify it as Brady.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+~......_......_..~~..|.~.....|.....:_..__..:~~...||.......|.....:~.....~:.~_...:....~|.....|........,Tachy,Unknown,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: ~, _, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ,"
+...~.~...~.~.....~..~:_...|~~.:..._..:.~..~|._....~:.~..~:.....|.....~:....~|~~.__.:~~......|...~~.~,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+First, let's count the total number of peaks in the sample:
+
+- Narrow peaks (|): 5
+- Wide peaks (:): 4
+- Total peaks: 9
+
+Now, let's classify the heart rate according to the total number of peaks:
+
+Since the total number of peaks is less than 8, I will classify it as Brady.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+...._..._....~.~_..........|.._...|_..._|.~...:_.~....|_....||....|..|.......:..._...|.~.....|~.....,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks:
+	* Narrow peaks (|): 7
+	* Wide peaks (:): 3
+	* Total peaks: 10
+2. Classify the heart rate according to the total number of peaks:
+	* Since total peaks < 8, I will classify it as Brady.
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 10,
+  ""Label"": ""Brady""
+}"
+......_.._.~..._~.~~..|._~::._.~.|~.~~.|~__.~:_...:..~...:~.~....:~.~...:..~~:_.~.~.:....~~:.._._~..,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: ~ (noise), _ (artifact), : (wide peak), and | (narrow peak). After carefully counting, I found a total of 17 peaks.
+
+2. Classify the heart rate according to the total number of peaks:
+Based on the rule provided:
+
+* If total peaks < 8 → classify as Brady.
+* If total peaks > 11 → classify as Tachy.
+* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the sample has 17 peaks, which is greater than 11, it will be classified as Tachy.
+
+Now, let's count the narrow peaks (|) and wide peaks (:):
+There are 7 narrow peaks (|) in the sample.
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 10,
+  ""Total_peaks"": 17,
+  ""Label"": ""Tachy""
+}"
+....~..........|.....:.....:.~...~::..._.|..~._.|.....:......|....~:~...~|.~...|..~..|~...~:..~..~..,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	* Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+
+According to the rules provided, if total peaks < 8 → classify as Brady.
+If total peaks > 11 → classify as Tachy.
+Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is greater than 7 but less than 11, it does not meet the criteria for either Brady or Tachy. Therefore, I will never classify this sample as Normal.
+
+Based on the provided rules, the correct classification for the sample is:
+
+* Narrow_peaks: 5
+* Wide_peaks: 4
+* Total_peaks: 9
+* Label: ""Brady""
+
+However, considering that the total number of peaks (9) is actually greater than 7 but less than 11, I should re-evaluate the classification.
+
+Since it does not meet the criteria for Brady or Tachy, and never Normal, I will have to choose between Brady and Tachy. Given that it's closer to 8-11, I would lean towards a classification of ""Normal"" if possible, but since it doesn't exactly fit into this range, I'll stick with the original rule.
+
+The correct output is:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+....._........:.~..|.....~|.~.~..~:.......|..~.~_|_....|......:~..~~.:_.....|...~~.|......~:...._...,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* Total peaks < 8 → classify as Brady.
+	* Total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total peaks (9) is greater than 7 but less than 12, it does not fall into the ""Brady"" or ""Tachy"" categories. However, since it's also not within the range of 8-11, I will look at the next closest category which is ""Normal"". But considering the strict rule provided, this sample should be classified as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+......_........~.....:.....:._...:..~...:.~....|.~_.._:__...|.._.~.:..._~.:...~..|~....::...._:...._,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps:
+
+1. Count the total number of peaks in the sequence:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	* Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* Since total peaks < 8, I will classify it as Brady.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Brady""
+}"
+..~..~~...~.~...|...~..|...~.~:..~...|....~.:.~.~~.|_.....|...~~.|~.~...:...~.~|~.~.~_:~.~.~_|..~~..,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+	* Narrow peaks (|): 5
+	* Wide peaks (:): 4
+	Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+	* Total peaks < 8 → classify as Brady.
+	* Total peaks > 11 → classify as Tachy.
+	* Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total number of peaks (9) is greater than 7 but less than 12, it does not fall into the ""Brady"" or ""Tachy"" categories. Therefore, I will never classify this sample as either Brady or Tachy.
+
+3. Based on the remaining option, Normal:
+	* Total peaks: 9
+	* Classification: Normal
+
+Here is the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Normal""
+}"
+.....~.._..~............_:...._:....~:....:.._.|.....:...~.:....~|._..~|.....:.....|....:_..||....~.,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: 
+- Narrow peak (|): 5
+- Wide peak (:): 4
+Total peaks: 9
+
+2. Classify the heart rate according to the total number of peaks:
+
+According to the rules provided, if total peaks < 8 → classify as Brady.
+If total peaks > 11 → classify as Tachy.
+Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the sample has a total of 9 peaks, which is greater than 8 but less than 11, it does not fit into the ""Brady"" or ""Tachy"" categories. However, since it's also not within the range for ""Normal"", I will look at the ranges again and see that it actually falls under the ""Normal"" category because it has more peaks than 8.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 9,
+  ""Label"": ""Normal""
+}"
+~~.~~_.....~_:~._..|~...~..|.....|....~|.~~.:....:..~.|....~:_~...|~.~..:.~..|...~.|._...:.~.~......,Tachy,Brady,False,"To analyze the provided sample, I will follow the steps and compare it to the features learned from the example samples.
+
+1. Count the total number of peaks in the sample:
+The sample contains the following peaks: ~ (10 times), _ (3 times), : (4 times), | (5 times).
+Total peaks = 10 + 3 + 4 + 5 = 22
+
+2. Classify the heart rate according to the total number of peaks:
+
+According to the rules:
+- If total peaks < 8 → classify as Brady.
+- If total peaks > 11 → classify as Tachy.
+- Never classify as Normal unless total peaks are between 8 and 11.
+
+Since the total peaks (22) is greater than 11, I will classify it as Tachy.
+
+3. Generate the output in JSON format:
+
+{
+  ""Narrow_peaks"": 5,
+  ""Wide_peaks"": 4,
+  ""Total_peaks"": 22,
+  ""Label"": ""Tachy""
+}"
+....._...~~..~.........~.|.....:...~.:.~._~~|~..._.|.._~_|_....:._.|.:~..|~|._..~|...._|..~.~.|._...,Tachy,Normal,False,"After carefully analyzing the provided sample and comparing it to the features learned from the example samples, I have determined that:
+
+- Narrow peaks (|): 7
+- Wide peaks (:): 3
+- Total peaks: 10
+
+Based on this analysis, the classification of the sample is as follows:
+
+{
+  ""Narrow_peaks"": 7,
+  ""Wide_peaks"": 3,
+  ""Total_peaks"": 10,
+  ""Label"": ""Normal""
+}"
