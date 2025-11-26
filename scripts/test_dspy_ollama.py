@@ -2,7 +2,7 @@ import dspy
 
 # 1️⃣ Configurar el modelo local de Ollama
 ollama_lm = dspy.LM(
-    model="ollama/mistral:7b",        
+    model="ollama/mistral:7b",
     api_base="http://localhost:11434"
 )
 dspy.configure(lm=ollama_lm)
@@ -20,13 +20,7 @@ class WeatherClassifier(dspy.Signature):
 # 3️⃣ Crear el predictor
 classifier = dspy.Predict(WeatherClassifier)
 
-# 4️⃣ Mostrar el prompt que DSPy genera
-print("\n🧩 Prompt generado automáticamente por DSPy:")
-print("---------------------------------------------")
-print(WeatherClassifier.__doc__)
-print("---------------------------------------------\n")
-
-# 5️⃣ Probar con ejemplos simples
+# 4️⃣ Probar con ejemplos simples
 examples = [
     "The sun is shining and the sky is clear.",
     "Dark clouds are gathering and it starts to rain.",

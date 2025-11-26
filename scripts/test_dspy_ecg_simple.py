@@ -9,7 +9,7 @@ def count_peaks(seq: str) -> int:
 
 # Configurar el modelo
 ollama_lm = dspy.LM(
-    model="ollama/mistral:7b",  
+    model="ollama/mistral:7b",  # probamos con mistral:7b
     api_base="http://localhost:11434"
 )
 dspy.configure(lm=ollama_lm)
@@ -41,7 +41,7 @@ class ECGClassifier(dspy.Signature):
 # Crear el predictor
 classifier = dspy.Predict(ECGClassifier)
 
-# Ejemplos de prueba
+# Ejemplos de prueba de cada clase
 examples = {
     "Brady_7": ".|:|:|:|",               # 7 picos
     "Normal_10": ".|:|:|:|:|:",          # 10 picos
@@ -90,6 +90,7 @@ for label, seq in examples.items():
 
     correct = predicted_class.lower() == expected_class.lower()
     mark = "✅" if correct else "❌"
+    comment = "✅ Nº picos correcto" if true_peaks == predicted_peaks else "❌ Nº de picos incorrecto"
 
     print(f"🫀 {label:<10} | Picos reales: {true_peaks:<2} | Esperado: {expected_class:<7} "
-          f"| Modelo → {predicted_class:<7} ({predicted_peaks}) {mark}")
+          f"| Modelo → {predicted_class:<7} ({predicted_peaks}) {mark} {comment}")
