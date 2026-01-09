@@ -1,17 +1,16 @@
 metric,value
-Overall Accuracy,0.3333333333333333
-Correct Predictions,33
+Overall Accuracy,0.32323232323232326
+Correct Predictions,32
 Total Predictions,99
-Task,1
 N-shots,2
 Model,llama3:8b
-Timestamp,2025-11-23T12:01:45.527770
-Brady Accuracy,1.0
-Brady TP,33
+Timestamp,2026-01-08T10:47:26.790759
+Brady Accuracy,0.0
+Brady TP,0
 Brady Total,33
-Normal Accuracy,0.0
-Normal TP,0
+Normal Accuracy,0.5454545454545454
+Normal TP,18
 Normal Total,33
-Tachy Accuracy,0.0
-Tachy TP,0
+Tachy Accuracy,0.42424242424242425
+Tachy TP,14
 Tachy Total,33

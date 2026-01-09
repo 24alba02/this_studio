@@ -1,330 +1,100 @@
-sequence,true_class,predicted_class,correct,narrow_peaks,wide_peaks,total_peaks,raw_response
-......~...........~:.............:..~...._....|..............|..........~.|..~..........|...........,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.~..._.~...._........|........._.....:~~._........__|.....~..........:.........._..__~:......~~.....,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-...._......~.|....._.....~.._...:__~.~.._...._......|....._.~..........:.~......~...~....~.~....~._.,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters. Here is my output:
-
-{
-  ""Narrow_peaks"": 5,
-  ""Wide_peaks"": 3,
-  ""Total_peaks"": 8
-}"
-...~.....~_.~...~~:.....~.._~.~~...|.~.~.....~....|~.~.....~.~~..:...~_...~........|.~....~.~.~...~~,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample symbolic sequence, and I'll count the ""|"" and "":"" symbols for you."
-...........~.~._|..~......~.._.:...........~~..|......._..~....|.~....._._..._.|...~._...........~~.,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-................~........|......_....._|....._~.....|.~...........:.............|...........|.......,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-.~...~...~....~_.....~...~|.~|_.........~.~._.~:~...~...~.......|...~.~..~...~~.|~._.....~~....~....,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-~......_.._...~..........___.:..~._...........|.~_.._...|...._|~...............|.........~.~.......~,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.~~..............~.~_:.._....._....|...~.~.~...~.|.....~.......|~.~._...~.....:~....~._~~...|.......,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the counts."
-....__........_.._.........~.|_....._..._.|.._.....~..|.|..._....__..:..~.._..~_.._|..~........._...,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-.....~......._...:.._...._~_|~......__.~~:............._.|..~.~.~~...~.~|.~......~~.~....~...._.....,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-....._.........~........|.._.......:_..~..~.~...:.._.......~...|._.............|.........~.~..|._...,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-~...................|...~....~....:.._.~.....~.|....~~...~_...|...._...._...:._.._...~..~.:....~....,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-..~....._........~..~...~.~|..__....~~~~.|~........~.....|_.......~..~....|.......~......:....~.~...,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-_........~|.~..~.~.~~....:.~~....~.~.~...:_.~~....~.....|........_....~._:.~................~...~.~.,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-_...~.......|.~~...........:.~.._.._....~.|........_.._....|.~..~.._.......|._~........_..._....~...,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters. Here is my output:
-
-{
-  ""Narrow_peaks"": 5,
-  ""Wide_peaks"": 3,
-  ""Total_peaks"": 8
-}"
-.~...~.....~~.:.._.~..~...~|......~..:_....~~.........|..~.......|............:........~............,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-..._..........~.......~....|..............._|...........~..|................|...~............:....~.,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the counts."
-.._................~.~~....:.~...~.._~.~:~..~.~...~...|...~.~..~.~_.|~.._~....~~.|.._..~....~.:..~..,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-..~.~......_.......~.|~~...~...~...|.~.._.~~..~..|...~..__......|....._~..~~:...._.~~~_.~|..~...~...,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-..~_._......~......~~~.~..._~|.._..~~.._~...~.~~~.:.~..~_..___...~..~|._._....~.~.~__~...|~~...~~...,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-..~....._.~_.|......_._....~~.._.:~.~......~...~...|.~.._...._..._..~~|_~~.~.._..~.~..._~..._...._..,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.....~..~.._~.:....~..~._.....|__....~.~.~.._.:_~~....~..._...|.~_~.~..~.~.~...|~.._....~..._._...~.,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-......~...~......_.~|..._...~.~.~....:...............:......~.......~|~._..._.~......:~...~......~..,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-....~~....~....._._|.._............:....~........~...|.....~~...._...:...~.....~..~_.|~....~........,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-........~...~~..._......|.....~..~._.~.....|.~.....~...._._~...:..._......__...~..|......~..~~~.._._,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols without any interpretation or classification.
-
-Please provide the sample symbolic sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.~.~.__...._|....~~...._..:...........__:.._~.~.._.~|....._~...~..|_~~..........:...................,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-~....~...~..~..~..~...~.~.|...~..~......|.....~....~.~.|~.~..:~.....:.~_.~.......|.~..~..~..~~..~...,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-....._._....~~....|...............:..............|._...._.._..~...|............~....._.|............,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.~.~..........._......~._|....~...__.__.|~......~..._~.|..._............|_...._..~_.._..:...._......,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-....~...............~.~:.........~.~:..~..~.......:......~_..~|..~~~....~..|.....~..~~..:...........,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-..........:..._.._~..~....~.|__.~_........~_.._~|..~.~..~~.......|.~~...~....~~~~.:...~.....~...~...,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.~...~....~:...~~.......~~:._..~..~..~.|~..~~....~..~:..~...~.~..~:.....~~_.~.~|...~._....~...~_....,Brady,Brady,True,0,0,0,"I can only count the ""|"" and "":"" symbols without any interpretation or classification.
-
-Please provide the sample symbolic sequence, and I'll give you the count of ""|"" and "":"" symbols."
-~.....~....~...|.~....._~|.~~..~.~.:~~.~.~~..~:.~..._.:...._..|...~.~..~.:.......~..:....._.~....~..,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-...........~..~_~.|....~~~_.:~~......_.:~_.~_....:~~..~..:|~...__...|.._..~~_.:_......_.|..~.~.~~..~,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.........~_._.:.~.....|~......|~.......:..~.....|.......:.......|...~....|.......|~...~...|.._......,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-.............:..~..._..~.~.._:.......~.~:........:._.~.....:.........|........~..:........|.........,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-........~...~.:.....~.....|...~~.~~..:..._..~..:........~:~.~..~...~:.~~.~~...|....._...~|..........,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.._.............~_.~.|.:....._..:....._....|..._...__:......_...:..~._...~|......~..:.._~..._....~..,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-~_..~........~.~.~.....~.|..__~..:~...__~~:._..._.|_...~~.:~_~~.~_:~..~.~.|....~..:~...~|~:.....~.~_,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-....~..........~...~...:..|._...:..~....:.~._....:...~..~:........|~._.~..:.._.....|.~_~_~...|...~_~,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-..._.....~.~~..~._....~~.|~.~~.~.~.|.~~...._:_....~~~.|~.....~.:~...~..~.|~.~...|~:....~...~|.~.~...,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the counts."
-~.~................~~.~.~.:..~.....|.......~:|....~...|.........|......~..|.~......~:.....~..:~.....,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-...~~._.~~....|..~......|...~......:..~....~.|..~..~...:~.........|..........|.....~...|~...........,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.~...~.....~~...~..|.~.......:~~......|.~.~~~..~.:.......:.......~.:..........:~.~....~_.|..........,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-.~.~..~~....~......|.~....._.|..._._....|._..~._..|.~~....~|_~....~._:~....~..|..._....|..._._..~...,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-~~....~.~....~..~....~..~..|...~|.~~~|.....~..~|.~.....|~....~~..|...~._~.~|...~...|...~~~..:..~.~.~,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.._...........|.........|......~.|.._....|.........:.|........|.........:._.~.....|.~.~.......:~....,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the counts."
-~......_....~.....~.._.~.....|....._~|...._...:..._...:..~....~|...~.~..:.|~....:..|...._|~.....~...,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols in JSON format."
-.__....~._.~...:.._.......:.......~_:__._.._...|........:......_.~|_.........:_......~|...~.._|..._.,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.~.~..._.~:....._...|..._~~.~.|_..~_....|_.......~~|......_..~|.~....~..|..._..~...:~......~.~...~..,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-._......._~.|..~..~._..:..._.....|....._~~.:....~~._..|..~....._.|~_._......|........|.._....~..._..,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-~...~.........~...~:...~~..:.........|...|.....|......_..|.........|...~.......|..~~...|............,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-.~__..._......:...._...|..~...~..|...._...:........:..~.~.~_:~._.~~..:..~..~.~.:.~.~....|...........,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.~...........~.:.~..._....|.........|.._...~_.:.~......~|.._.......|.........~.|....~...|...........,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-..........~_.~..........|.....~...:~.._.~~|......~:..~.~.._.:.:......|.:.~...~~:_......:...~........,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-........~..|.~~.~..~.|~..._....~|.....~...:~.......:._.._....|..~~......:......_...:...~....._......,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.._.._......_....~...........|~._...._~~:..........|........~~:...~....~|.~~|.~...|.~.......~|....~~,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the counts."
-._....~.~....._..~.|_....~.~|_.....~.:...._...|_....._..|..~.~...|~.......:....~...~:........:._..._,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols without any interpretation or classification.
-
-Please provide the sample symbolic sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.~......~.........~.........~|........~..|.~...~....|........:|....._.:........:.......|.......~...~,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-.~...........~|......_.:....~...:.~.....:_~..~..:_.......:.......~|......._|...._..|.......|~..~....,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-................~:...~...:..._.....|.~......|....._..|.....~_|.......:..._.|~.|...~~._.|~..~...~....,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-......._........._._.....|.._.....|......~..|...~.._.|........_:.._...~...|.........:........:~.....,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters. Here is my output:
-
-{
-  ""Narrow_peaks"": 5,
-  ""Wide_peaks"": 3,
-  ""Total_peaks"": 8
-}"
-.~...........~...:.......:........|..~..~~.|.._.....|....._.~|...~.~..|.~...~.:~.._~...|.._~~|._....,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-........._......|......_.|........:.......:_.._.._.:......~..|.~.....:....__.:......_|...~...:......,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-......................~....|..........:..........:_.......:|..........|_........|..._......|..~...~.,Normal,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.....~..~.......~...~|.~...:~....:..._~.|...~.:~..~~.|.~...|.....:.~.|.|...:~|~...~|.....|~....._.~.,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-...~.........._...:_~.~_|.~..|..~..|....|._...:...|.:....|....~|~.._.|...._|..~..|.....|...~.|.....~,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.........~_......_.~.:....~|..~~..:...~._|~.~~~.:..._.|~...:.|.....:......|.._...|__...:.~.~~.:~~...,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters. Here is my output:
-
-{
-  ""Narrow_peaks"": 5,
-  ""Wide_peaks"": 3,
-  ""Total_peaks"": 8
-}"
-.......~_.....|..._.|......|.....|.......|....|..._...|._....|__...|...~|.~._..:.._...:.....~.......,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-..~......~:.._~..:.._...:.._.._|..~~..|.~....:.....|._...~:......:.....|~~~._.:......:.~._..:..~....,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-....~~............_.~.......|.....~|..~....|......:....|.......|._...|....:....:..:..~|:.._..|....~~,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-..._...~.~...|..~..|~.....:...~~~|~...~|.~...|.~~.|~.._.|.....|:..~..|....~~:.~...|.....|..~....~.~.,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-..........._...~:.~....~|.~...~.:_....|.._...:.~.....:~......:.......|.._..|......:......:..|.~.....,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-._..........~...:_....:.....|.....|.....|.._..:.....|..|..|......|.~...:._...|.._..|~_.~.:.....~.._.,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-...~~.~~~~._....~.|.~~.~_|_~~..:..~..|..~..:~~.._~:..~~.:...._.:_.~.|.~.._.|...~.|....~:_.~..:....~.,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-...............|.~..~.|....|~~._.|......|......:....~.|.....|...~.|..~..~:......|....~.|......|.....,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols without any interpretation or classification.
-
-Please provide the sample symbolic sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.._.....~.........:.....:.....|.....|.....|.....|.....|._...:...~.|..~..:~...:....._:.....|.........,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols without any interpretation or classification.
-
-Please provide the sample symbolic sequence, and I'll give you the count of ""|"" and "":"" symbols."
-....~.~......~......~.....|..|....:.|....~.:..~._.|....~..|.~~...|....~.|~......:......|......|.....,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-..~.......~.~.:....:~~.|_._..|..~..:....|....:....~:...~.:..~..:.....:.._.:.~...|~....:..~..|.~~....,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-........_.........._...~:.._..~.:..~~..::.~._.:~|.....:.:..._....:~.....:...~....|......|~..._.._~..,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-.....~._......_.:......:...~..:.._..|.....|.....~|.....:.._...:..._..:..:..~|.~....:......:......_..,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-_..~.......~..~..~~.....__:..._.|.._.|:.~_.|:~...~|.....|.....|.....|.....:._..:...~:..~.:.._.|.....,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters. Here's my output:
-
-{
-  ""Narrow_peaks"": 5,
-  ""Wide_peaks"": 3,
-  ""Total_peaks"": 8
-}"
-......~_.~_....~...~.:.....:...~||..~.:|...|..:...:......:.~..:......:.....|.....|~~....:._.........,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-...........~.~....~......:.....|...|.:.~|.:~.._.:.._.|..~..|~._...:....:......|.~....:.~...|..~~....,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.~......~...~|.~...|.....|:_.~..:...~.|.....:......|.~...:..~.~.|.~...:..~..|~.~~..:~.~~..|...~.....,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-.....~_..........|_~...|~.....|.....:.._~..:.~_.~.|....|.|.~..~|..~...|..~..:..~.~.|......|.........,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-.~.........~......~..:.....~:.....:_.~~..:.....|...~.:~..._:.....:.....|_..~.:|~...|:....:~.~_....~~,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample symbolic sequence, and I'll give you the count of ""|"" and "":"" symbols in the following JSON format:
-
-{
-  ""Narrow_peaks"": <number>,
-  ""Wide_peaks"": <number>,
-  ""Total_peaks"": <number>
-}"
-~......_......_..~~..|.~.....|.....:_..__..:~~...||.......|.....:~.....~:.~_...:....~|.....|........,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-...~.~...~.~.....~..~:_...|~~.:..._..:.~..~|._....~:.~..~:.....|.....~:....~|~~.__.:~~......|...~~.~,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-...._..._....~.~_..........|.._...|_..._|.~...:_.~....|_....||....|..|.......:..._...|.~.....|~.....,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-......_.._.~..._~.~~..|._~::._.~.|~.~~.|~__.~:_...:..~...:~.~....:~.~...:..~~:_.~.~.:....~~:.._._~..,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-....~..........|.....:.....:.~...~::..._.|..~._.|.....:......|....~:~...~|.~...|..~..|~...~:..~..~..,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the counts."
-....._........:.~..|.....~|.~.~..~:.......|..~.~_|_....|......:~..~~.:_.....|...~~.|......~:...._...,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-......_........~.....:.....:._...:..~...:.~....|.~_.._:__...|.._.~.:..._~.:...~..|~....::...._:...._,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, ignoring all other characters.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-..~..~~...~.~...|...~..|...~.~:..~...|....~.:.~.~~.|_.....|...~~.|~.~...:...~.~|~.~.~_:~.~.~_|..~~..,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols in JSON format."
-.....~.._..~............_:...._:....~:....:.._.|.....:...~.:....~|._..~|.....:.....|....:_..||....~.,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols in the following JSON format:
-
-{
-  ""Narrow_peaks"": <number>,
-  ""Wide_peaks"": <number>,
-  ""Total_peaks"": <number>
-}"
-~~.~~_.....~_:~._..|~...~..|.....|....~|.~~.:....:..~.|....~:_~...|~.~..:.~..|...~.|._...:.~.~......,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample sequence, and I'll give you the count of ""|"" and "":"" symbols."
-....._...~~..~.........~.|.....:...~.:.~._~~|~..._.|.._~_|_....:._.|.:~..|~|._..~|...._|..~.~.|._...,Tachy,Brady,False,0,0,0,"I can only count the ""|"" and "":"" symbols, without any interpretation or classification.
-
-Please provide the sample symbolic sequence, and I'll give you the count of ""|"" and "":"" symbols."
+sequence,true_class,true_peaks,predicted_class,predicted_peaks,correct
+......~...........~:.............:..~...._....|..............|..........~.|..~..........|...........,Brady,6,Normal,9,False
+.~..._.~...._........|........._.....:~~._........__|.....~..........:.........._..__~:......~~.....,Brady,5,Normal,11,False
+...._......~.|....._.....~.._...:__~.~.._...._......|....._.~..........:.~......~...~....~.~....~._.,Brady,4,Normal,11,False
+...~.....~_.~...~~:.....~.._~.~~...|.~.~.....~....|~.~.....~.~~..:...~_...~........|.~....~.~.~...~~,Brady,5,Tachy,15,False
+...........~.~._|..~......~.._.:...........~~..|......._..~....|.~....._._..._.|...~._...........~~.,Brady,5,Normal,11,False
+................~........|......_....._|....._~.....|.~...........:.............|...........|.......,Brady,6,Normal,9,False
+.~...~...~....~_.....~...~|.~|_.........~.~._.~:~...~...~.......|...~.~..~...~~.|~._.....~~....~....,Brady,5,Tachy,15,False
+~......_.._...~..........___.:..~._...........|.~_.._...|...._|~...............|.........~.~.......~,Brady,5,Normal,11,False
+.~~..............~.~_:.._....._....|...~.~.~...~.|.....~.......|~.~._...~.....:~....~._~~...|.......,Brady,6,Normal,11,False
+....__........_.._.........~.|_....._..._.|.._.....~..|.|..._....__..:..~.._..~_.._|..~........._...,Brady,6,Normal,11,False
+.....~......._...:.._...._~_|~......__.~~:............._.|..~.~.~~...~.~|.~......~~.~....~...._.....,Brady,5,Tachy,15,False
+....._.........~........|.._.......:_..~..~.~...:.._.......~...|._.............|.........~.~..|._...,Brady,6,Normal,11,False
+~...................|...~....~....:.._.~.....~.|....~~...~_...|...._...._...:._.._...~..~.:....~....,Brady,6,Tachy,15,False
+..~....._........~..~...~.~|..__....~~~~.|~........~.....|_.......~..~....|.......~......:....~.~...,Brady,5,Normal,11,False
+_........~|.~..~.~.~~....:.~~....~.~.~...:_.~~....~.....|........_....~._:.~................~...~.~.,Brady,5,Normal,11,False
+_...~.......|.~~...........:.~.._.._....~.|........_.._....|.~..~.._.......|._~........_..._....~...,Brady,5,Normal,11,False
+.~...~.....~~.:.._.~..~...~|......~..:_....~~.........|..~.......|............:........~............,Brady,6,Normal,11,False
+..._..........~.......~....|..............._|...........~..|................|...~............:....~.,Brady,5,Normal,11,False
+.._................~.~~....:.~...~.._~.~:~..~.~...~...|...~.~..~.~_.|~.._~....~~.|.._..~....~.:..~..,Brady,6,Tachy,15,False
+..~.~......_.......~.|~~...~...~...|.~.._.~~..~..|...~..__......|....._~..~~:...._.~~~_.~|..~...~...,Brady,6,Tachy,15,False
+..~_._......~......~~~.~..._~|.._..~~.._~...~.~~~.:.~..~_..___...~..~|._._....~.~.~__~...|~~...~~...,Brady,4,Tachy,15,False
+..~....._.~_.|......_._....~~.._.:~.~......~...~...|.~.._...._..._..~~|_~~.~.._..~.~..._~..._...._..,Brady,4,Tachy,15,False
+.....~..~.._~.:....~..~._.....|__....~.~.~.._.:_~~....~..._...|.~_~.~..~.~.~...|~.._....~..._._...~.,Brady,5,Normal,11,False
+......~...~......_.~|..._...~.~.~....:...............:......~.......~|~._..._.~......:~...~......~..,Brady,5,Normal,11,False
+....~~....~....._._|.._............:....~........~...|.....~~...._...:...~.....~..~_.|~....~........,Brady,5,Normal,11,False
+........~...~~..._......|.....~..~._.~.....|.~.....~...._._~...:..._......__...~..|......~..~~~.._._,Brady,4,Tachy,15,False
+.~.~.__...._|....~~...._..:...........__:.._~.~.._.~|....._~...~..|_~~..........:...................,Brady,6,Normal,11,False
+~....~...~..~..~..~...~.~.|...~..~......|.....~....~.~.|~.~..:~.....:.~_.~.......|.~..~..~..~~..~...,Brady,6,Tachy,15,False
+....._._....~~....|...............:..............|._...._.._..~...|............~....._.|............,Brady,5,Normal,11,False
+.~.~..........._......~._|....~...__.__.|~......~..._~.|..._............|_...._..~_.._..:...._......,Brady,5,Normal,11,False
+....~...............~.~:.........~.~:..~..~.......:......~_..~|..~~~....~..|.....~..~~..:...........,Brady,6,Normal,11,False
+..........:..._.._~..~....~.|__.~_........~_.._~|..~.~..~~.......|.~~...~....~~~~.:...~.....~...~...,Brady,5,Tachy,15,False
+.~...~....~:...~~.......~~:._..~..~..~.|~..~~....~..~:..~...~.~..~:.....~~_.~.~|...~._....~...~_....,Brady,6,Tachy,15,False
+~.....~....~...|.~....._~|.~~..~.~.:~~.~.~~..~:.~..._.:...._..|...~.~..~.:.......~..:....._.~....~..,Normal,8,Tachy,15,False
+...........~..~_~.|....~~~_.:~~......_.:~_.~_....:~~..~..:|~...__...|.._..~~_.:_......_.|..~.~.~~..~,Normal,9,Tachy,15,False
+.........~_._.:.~.....|~......|~.......:..~.....|.......:.......|...~....|.......|~...~...|.._......,Normal,10,Normal,11,True
+.............:..~..._..~.~.._:.......~.~:........:._.~.....:.........|........~..:........|.........,Normal,8,Normal,9,True
+........~...~.:.....~.....|...~~.~~..:..._..~..:........~:~.~..~...~:.~~.~~...|....._...~|..........,Normal,8,Tachy,11,False
+.._.............~_.~.|.:....._..:....._....|..._...__:......_...:..~._...~|......~..:.._~..._....~..,Normal,8,Normal,11,True
+~_..~........~.~.~.....~.|..__~..:~...__~~:._..._.|_...~~.:~_~~.~_:~..~.~.|....~..:~...~|~:.....~.~_,Normal,10,Tachy,15,False
+....~..........~...~...:..|._...:..~....:.~._....:...~..~:........|~._.~..:.._.....|.~_~_~...|...~_~,Normal,10,Tachy,15,False
+..._.....~.~~..~._....~~.|~.~~.~.~.|.~~...._:_....~~~.|~.....~.:~...~..~.|~.~...|~:....~...~|.~.~...,Normal,9,Normal,11,True
+~.~................~~.~.~.:..~.....|.......~:|....~...|.........|......~..|.~......~:.....~..:~.....,Normal,9,Normal,11,True
+...~~._.~~....|..~......|...~......:..~....~.|..~..~...:~.........|..........|.....~...|~...........,Normal,8,Normal,11,True
+.~...~.....~~...~..|.~.......:~~......|.~.~~~..~.:.......:.......~.:..........:~.~....~_.|..........,Normal,8,Normal,11,True
+.~.~..~~....~......|.~....._.|..._._....|._..~._..|.~~....~|_~....~._:~....~..|..._....|..._._..~...,Normal,8,Tachy,15,False
+~~....~.~....~..~....~..~..|...~|.~~~|.....~..~|.~.....|~....~~..|...~._~.~|...~...|...~~~..:..~.~.~,Normal,9,Tachy,15,False
+.._...........|.........|......~.|.._....|.........:.|........|.........:._.~.....|.~.~.......:~....,Normal,10,Normal,11,True
+~......_....~.....~.._.~.....|....._~|...._...:..._...:..~....~|...~.~..:.|~....:..|...._|~.....~...,Normal,10,Tachy,11,False
+.__....~._.~...:.._.......:.......~_:__._.._...|........:......_.~|_.........:_......~|...~.._|..._.,Normal,9,Normal,11,True
+.~.~..._.~:....._...|..._~~.~.|_..~_....|_.......~~|......_..~|.~....~..|..._..~...:~......~.~...~..,Normal,8,Tachy,15,False
+._......._~.|..~..~._..:..._.....|....._~~.:....~~._..|..~....._.|~_._......|........|.._....~..._..,Normal,8,Normal,11,True
+~...~.........~...~:...~~..:.........|...|.....|......_..|.........|...~.......|..~~...|............,Normal,9,Tachy,11,False
+.~__..._......:...._...|..~...~..|...._...:........:..~.~.~_:~._.~~..:..~..~.~.:.~.~....|...........,Normal,9,Normal,11,True
+.~...........~.:.~..._....|.........|.._...~_.:.~......~|.._.......|.........~.|....~...|...........,Normal,8,Normal,11,True
+..........~_.~..........|.....~...:~.._.~~|......~:..~.~.._.:.:......|.:.~...~~:_......:...~........,Normal,10,Tachy,15,False
+........~..|.~~.~..~.|~..._....~|.....~...:~.......:._.._....|..~~......:......_...:...~....._......,Normal,8,Tachy,15,False
+.._.._......_....~...........|~._...._~~:..........|........~~:...~....~|.~~|.~...|.~.......~|....~~,Normal,8,Normal,11,True
+._....~.~....._..~.|_....~.~|_.....~.:...._...|_....._..|..~.~...|~.......:....~...~:........:._..._,Normal,9,Normal,11,True
+.~......~.........~.........~|........~..|.~...~....|........:|....._.:........:.......|.......~...~,Normal,8,Normal,11,True
+.~...........~|......_.:....~...:.~.....:_~..~..:_.......:.......~|......._|...._..|.......|~..~....,Normal,10,Tachy,15,False
+................~:...~...:..._.....|.~......|....._..|.....~_|.......:..._.|~.|...~~._.|~..~...~....,Normal,10,Tachy,15,False
+......._........._._.....|.._.....|......~..|...~.._.|........_:.._...~...|.........:........:~.....,Normal,8,Normal,11,True
+.~...........~...:.......:........|..~..~~.|.._.....|....._.~|...~.~..|.~...~.:~.._~...|.._~~|._....,Normal,10,Tachy,11,False
+........._......|......_.|........:.......:_.._.._.:......~..|.~.....:....__.:......_|...~...:......,Normal,10,Normal,11,True
+......................~....|..........:..........:_.......:|..........|_........|..._......|..~...~.,Normal,8,Normal,9,True
+.....~..~.......~...~|.~...:~....:..._~.|...~.:~..~~.|.~...|.....:.~.|.|...:~|~...~|.....|~....._.~.,Tachy,14,Normal,11,False
+...~.........._...:_~.~_|.~..|..~..|....|._...:...|.:....|....~|~.._.|...._|..~..|.....|...~.|.....~,Tachy,15,Tachy,11,True
+.........~_......_.~.:....~|..~~..:...~._|~.~~~.:..._.|~...:.|.....:......|.._...|__...:.~.~~.:~~...,Tachy,13,Tachy,15,True
+.......~_.....|..._.|......|.....|.......|....|..._...|._....|__...|...~|.~._..:.._...:.....~.......,Tachy,12,Normal,11,False
+..~......~:.._~..:.._...:.._.._|..~~..|.~....:.....|._...~:......:.....|~~~._.:......:.~._..:..~....,Tachy,13,Tachy,15,True
+....~~............_.~.......|.....~|..~....|......:....|.......|._...|....:....:..:..~|:.._..|....~~,Tachy,13,Normal,11,False
+..._...~.~...|..~..|~.....:...~~~|~...~|.~...|.~~.|~.._.|.....|:..~..|....~~:.~...|.....|..~....~.~.,Tachy,14,Normal,11,False
+..........._...~:.~....~|.~...~.:_....|.._...:.~.....:~......:.......|.._..|......:......:..|.~.....,Tachy,12,Normal,11,False
+._..........~...:_....:.....|.....|.....|.._..:.....|..|..|......|.~...:._...|.._..|~_.~.:.....~.._.,Tachy,14,Normal,11,False
+...~~.~~~~._....~.|.~~.~_|_~~..:..~..|..~..:~~.._~:..~~.:...._.:_.~.|.~.._.|...~.|....~:_.~..:....~.,Tachy,13,Tachy,15,True
+...............|.~..~.|....|~~._.|......|......:....~.|.....|...~.|..~..~:......|....~.|......|.....,Tachy,13,Normal,11,False
+.._.....~.........:.....:.....|.....|.....|.....|.....|._...:...~.|..~..:~...:....._:.....|.........,Tachy,13,Normal,11,False
+....~.~......~......~.....|..|....:.|....~.:..~._.|....~..|.~~...|....~.|~......:......|......|.....,Tachy,12,Normal,11,False
+..~.......~.~.:....:~~.|_._..|..~..:....|....:....~:...~.:..~..:.....:.._.:.~...|~....:..~..|.~~....,Tachy,15,Tachy,15,True
+........_.........._...~:.._..~.:..~~..::.~._.:~|.....:.:..._....:~.....:...~....|......|~..._.._~..,Tachy,12,Tachy,11,True
+.....~._......_.:......:...~..:.._..|.....|.....~|.....:.._...:..._..:..:..~|.~....:......:......_..,Tachy,13,Normal,11,False
+_..~.......~..~..~~.....__:..._.|.._.|:.~_.|:~...~|.....|.....|.....|.....:._..:...~:..~.:.._.|.....,Tachy,15,Normal,11,False
+......~_.~_....~...~.:.....:...~||..~.:|...|..:...:......:.~..:......:.....|.....|~~....:._.........,Tachy,15,Tachy,15,True
+...........~.~....~......:.....|...|.:.~|.:~.._.:.._.|..~..|~._...:....:......|.~....:.~...|..~~....,Tachy,14,Tachy,11,True
+.~......~...~|.~...|.....|:_.~..:...~.|.....:......|.~...:..~.~.|.~...:..~..|~.~~..:~.~~..|...~.....,Tachy,14,Normal,11,False
+.....~_..........|_~...|~.....|.....:.._~..:.~_.~.|....|.|.~..~|..~...|..~..:..~.~.|......|.........,Tachy,13,Normal,11,False
+.~.........~......~..:.....~:.....:_.~~..:.....|...~.:~..._:.....:.....|_..~.:|~...|:....:~.~_....~~,Tachy,14,Tachy,11,True
+~......_......_..~~..|.~.....|.....:_..__..:~~...||.......|.....:~.....~:.~_...:....~|.....|........,Tachy,12,Tachy,15,True
+...~.~...~.~.....~..~:_...|~~.:..._..:.~..~|._....~:.~..~:.....|.....~:....~|~~.__.:~~......|...~~.~,Tachy,12,Normal,11,False
+...._..._....~.~_..........|.._...|_..._|.~...:_.~....|_....||....|..|.......:..._...|.~.....|~.....,Tachy,12,Normal,11,False
+......_.._.~..._~.~~..|._~::._.~.|~.~~.|~__.~:_...:..~...:~.~....:~.~...:..~~:_.~.~.:....~~:.._._~..,Tachy,13,Tachy,15,True
+....~..........|.....:.....:.~...~::..._.|..~._.|.....:......|....~:~...~|.~...|..~..|~...~:..~..~..,Tachy,14,Normal,11,False
+....._........:.~..|.....~|.~.~..~:.......|..~.~_|_....|......:~..~~.:_.....|...~~.|......~:...._...,Tachy,12,Normal,11,False
+......_........~.....:.....:._...:..~...:.~....|.~_.._:__...|.._.~.:..._~.:...~..|~....::...._:...._,Tachy,13,Normal,11,False
+..~..~~...~.~...|...~..|...~.~:..~...|....~.:.~.~~.|_.....|...~~.|~.~...:...~.~|~.~.~_:~.~.~_|..~~..,Tachy,12,Tachy,15,True
+.....~.._..~............_:...._:....~:....:.._.|.....:...~.:....~|._..~|.....:.....|....:_..||....~.,Tachy,14,Normal,11,False
+~~.~~_.....~_:~._..|~...~..|.....|....~|.~~.:....:..~.|....~:_~...|~.~..:.~..|...~.|._...:.~.~......,Tachy,14,Tachy,15,True
+....._...~~..~.........~.|.....:...~.:.~._~~|~..._.|.._~_|_....:._.|.:~..|~|._..~|...._|..~.~.|._...,Tachy,14,Tachy,15,True
