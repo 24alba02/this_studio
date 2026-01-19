@@ -41,7 +41,14 @@ def main():
     data_dir = project_root / "data" / "task1" / "fine_tuning"
     train_file = data_dir / "train_labels.jsonl"
 
-    output_dir = project_root / "outputs" / "fine_tuning" / "labels"
+    model_name = args.model.replace("/", "_")
+    output_dir = (
+        project_root
+        / "outputs"
+        / "fine_tuning"
+        / "labels"
+        / model_name
+    )
     output_dir.mkdir(parents=True, exist_ok=True)
 
     seed = 42
@@ -73,8 +80,8 @@ def main():
         return tokenizer(
             prompt + " " + label,
             truncation=True,
-            padding="max_length",
-            max_length=512
+            padding=False,
+            max_length=64
         )
 
     print("🧩 Tokenizando ejemplos...")
@@ -88,12 +95,14 @@ def main():
         args.model,
         device_map="auto"
     )
+    model.gradient_checkpointing_enable()
+    model.config.use_cache = False
 
     # LoRA
     print("🧠 Aplicando LoRA...")
     lora_config = LoraConfig(
-        r=8,
-        lora_alpha=16,
+        r=4,
+        lora_alpha=8,
         target_modules=["q_proj", "v_proj"],
         lora_dropout=0.05,
         bias="none",
@@ -111,7 +120,7 @@ def main():
         gradient_accumulation_steps=1,
         learning_rate=2e-4,
         fp16=True,
-        save_strategy="epoch",
+        save_strategy="no",
         logging_steps=10,
         report_to="none"
     )

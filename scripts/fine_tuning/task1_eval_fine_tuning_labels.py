@@ -3,25 +3,45 @@
 from pathlib import Path
 import sys
 import torch
+import argparse
 from transformers import AutoTokenizer, AutoModelForCausalLM
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Evaluación de un modelo fine-tuneado por etiquetas"
+    )
+    parser.add_argument(
+        "--model",
+        type=str,
+        required=True,
+        help="Modelo base usado en el fine-tuning (ej: google/gemma-2b)"
+    )
+    return parser.parse_args()
 
 # Añadir el directorio src al path
 project_root = Path(__file__).parent.parent.parent
 src_path = project_root / "src"
 sys.path.insert(0, str(src_path))
 
-from data.loader import DataLoader  
-model_dir = project_root / "outputs" / "fine_tuning" / "labels"
+from data.loader import DataLoader 
 
 def predict(model, tokenizer, sequence: str) -> str:
     """
     Genera la clase predicha por el modelo fine-tuneado
-    a partir de una secuencia ECG en texto.
+    usando el mismo prompt que en el entrenamiento.
     """
+    prompt = (
+        "Classify the ECG sequence into one of the following classes:\n"
+        "Brady, Normal, Tachy.\n\n"
+        f"ECG sequence:\n{sequence}\n\n"
+        "Answer:"
+    )
+
     inputs = tokenizer(
-        sequence,
+        prompt,
         return_tensors="pt",
-        truncation=True
+        truncation=True,
+        max_length=512
     ).to(model.device)
 
     with torch.no_grad():
@@ -31,18 +51,37 @@ def predict(model, tokenizer, sequence: str) -> str:
             do_sample=False
         )
 
-    decoded = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    decoded = tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
 
-    # Extraemos solo la respuesta generada
+    # Extraer SOLO la etiqueta
     if "Answer:" in decoded:
-        return decoded.split("Answer:")[-1].strip()
+        predicted = decoded.split("Answer:")[-1].strip()
     else:
-        return decoded.strip()
+        predicted = decoded
+
+    # Normalización defensiva
+    predicted = predicted.split()[0]
+    predicted = predicted.replace(".", "").replace(",", "")
+
+    return predicted
 
 
 def main():
+    args = parse_args()
+
+    safe_model_name = args.model.replace("/", "_")
+    model_dir = (
+        project_root
+        / "outputs"
+        / "fine_tuning"
+        / "labels"
+        / safe_model_name
+    )
+
     print("📊 Evaluación del modelo fine-tuneado por etiquetas (Task 1)")
     print("=" * 60)
+    print(f"🤖 Modelo evaluado: {args.model}")
+    print(f"📂 Ruta del modelo: {model_dir}\n")
 
     loader = DataLoader(project_root / "data" / "task1")
     test_data = loader.load_test_data(ood=False)
