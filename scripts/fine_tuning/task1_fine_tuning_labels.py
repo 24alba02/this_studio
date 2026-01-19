@@ -86,7 +86,6 @@ def main():
     print(f"Cargando modelo base: {args.model}")
     model = AutoModelForCausalLM.from_pretrained(
         args.model,
-        load_in_8bit=True,
         device_map="auto"
     )
 
@@ -108,8 +107,8 @@ def main():
     training_args = TrainingArguments(
         output_dir=str(output_dir),
         num_train_epochs=args.epochs,
-        per_device_train_batch_size=2,
-        gradient_accumulation_steps=4,
+        per_device_train_batch_size=1,
+        gradient_accumulation_steps=1,
         learning_rate=2e-4,
         fp16=True,
         save_strategy="epoch",

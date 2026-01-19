@@ -2,3 +2,6 @@ pandas
 openai
 transformers
 dspy
+torch
+datasets
+peft
