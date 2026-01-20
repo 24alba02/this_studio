@@ -1,5 +1,5 @@
 """Convierte el dataset utilizado en ICL/DSPy (CSV) a un formato 
-compatible con Fine-tuning"""
+compatible con Fine-tuning en formato JSONL"""
 
 from pathlib import Path
 import csv
@@ -13,6 +13,7 @@ data_dir = project_root / "data" / "task1" / "test"
 output_dir = project_root / "data" / "task1" / "fine_tuning"
 output_dir.mkdir(parents=True, exist_ok=True)
 
+# Lista para almacenar los ejemplos
 rows = []
 
 # Leer el CSV original
@@ -28,16 +29,18 @@ with open(data_dir / "test_metadata.csv", newline="", encoding="utf-8") as f:
 random.seed(42)
 random.shuffle(rows)
 
-# Split train / validation (80 / 20)
+# Dividir el dataset en entrenamiento (80%) y validación (20%)
 split = int(0.8 * len(rows))
 train_rows = rows[:split]
 val_rows = rows[split:]
 
+# Guardar el JSONL (un ejemplo por línea)
 def save_dataset(path, data):
     with open(path, "w", encoding="utf-8") as f:
         for ex in data:
             f.write(json.dumps(ex) + "\n")
 
+#Guardar el dataset de entrenamiento y validación
 save_dataset(output_dir / "train_labels.jsonl", train_rows)
 save_dataset(output_dir / "val_labels.jsonl", val_rows)
 

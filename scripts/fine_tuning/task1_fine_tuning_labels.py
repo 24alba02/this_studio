@@ -41,6 +41,7 @@ def main():
     data_dir = project_root / "data" / "task1" / "fine_tuning"
     train_file = data_dir / "train_labels.jsonl"
 
+    # Crear directorio de output
     model_name = args.model.replace("/", "_")
     output_dir = (
         project_root
@@ -51,11 +52,13 @@ def main():
     )
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    # Fijar semilla
     seed = 42
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
 
+    # Carga del dataset de entrenamiento en formato JSONL
     print("📂 Cargando dataset de entrenamiento...")
     dataset = load_dataset("json", data_files=str(train_file))
 
@@ -84,12 +87,14 @@ def main():
             max_length=64
         )
 
+    # Tokenizar el dataset y eliminación de columnas
     print("🧩 Tokenizando ejemplos...")
     tokenized_dataset = dataset.map(
         format_example,
         remove_columns=dataset["train"].column_names
     )
 
+    # Cargar el modelo y activar checkpointing para reducir el consumo de memoria
     print(f"Cargando modelo base: {args.model}")
     model = AutoModelForCausalLM.from_pretrained(
         args.model,
@@ -113,6 +118,7 @@ def main():
     model.print_trainable_parameters()
 
     # Entrenamiento
+    # Configuración de los hiperparámetros de entrenamiento
     training_args = TrainingArguments(
         output_dir=str(output_dir),
         num_train_epochs=args.epochs,
@@ -135,9 +141,11 @@ def main():
         )
     )
 
+    # Entrenar
     print("⏳ Comenzando fine-tuning...")
     trainer.train()
 
+    # Guardar el modelo fine-tuneado
     print("💾 Guardando modelo ajustado...")
     model.save_pretrained(output_dir)
     tokenizer.save_pretrained(output_dir)

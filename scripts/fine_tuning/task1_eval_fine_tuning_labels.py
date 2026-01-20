@@ -53,7 +53,7 @@ def predict(model, tokenizer, sequence: str) -> str:
 
     decoded = tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
 
-    # Extraer SOLO la etiqueta
+    # Extraer solo la etiqueta
     if "Answer:" in decoded:
         predicted = decoded.split("Answer:")[-1].strip()
     else:
@@ -69,6 +69,7 @@ def predict(model, tokenizer, sequence: str) -> str:
 def main():
     args = parse_args()
 
+    # Directorio del modelo
     safe_model_name = args.model.replace("/", "_")
     model_dir = (
         project_root
@@ -83,6 +84,7 @@ def main():
     print(f"🤖 Modelo evaluado: {args.model}")
     print(f"📂 Ruta del modelo: {model_dir}\n")
 
+    # Cargar datos de test
     loader = DataLoader(project_root / "data" / "task1")
     test_data = loader.load_test_data(ood=False)
 
@@ -107,7 +109,7 @@ def main():
         "Tachy": {"tp": 0, "total": 0},
     }
 
-    # Evaluación
+    # Evaluación por cada ejemplo en el conjunto de test
     for sequence, true_class in test_data:
         predicted_class = predict(model, tokenizer, sequence)
 
