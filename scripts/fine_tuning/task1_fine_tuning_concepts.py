@@ -1,0 +1,160 @@
+""" Fine-tuning por conceptos (Task 1) usando LoRA (PEFT) """
+
+from pathlib import Path
+import argparse
+import random
+import numpy as np
+import torch
+
+from datasets import load_dataset
+from transformers import (
+    AutoTokenizer,
+    AutoModelForCausalLM,
+    TrainingArguments,
+    Trainer,
+    DataCollatorForLanguageModeling
+)
+
+from peft import LoraConfig, get_peft_model
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Fine-tuning por conceptos con LoRA")
+    parser.add_argument(
+        "--model",
+        type=str,
+        default="google/gemma-2b",
+        help="Modelo base a ajustar (Hugging Face hub)"
+    )
+    parser.add_argument(
+        "--epochs",
+        type=int,
+        default=3,
+        help="Número de épocas de entrenamiento"
+    )
+    return parser.parse_args()
+
+def main():
+    args = parse_args()
+
+    project_root = Path(__file__).parent.parent.parent
+
+    data_dir = project_root / "data" / "task1" / "fine_tuning"
+    train_file = data_dir / "train_concepts.jsonl"
+
+    # Crear directorio de output
+    model_name = args.model.replace("/", "_")
+    output_dir = (
+        project_root
+        / "outputs"
+        / "fine_tuning"
+        / "concepts"
+        / model_name
+    )
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # Fijar semilla
+    seed = 42
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+
+    # Carga del dataset de entrenamiento en formato JSONL
+    print("📂 Cargando dataset de entrenamiento...")
+    dataset = load_dataset("json", data_files=str(train_file))
+
+    # Tokenizar
+    print(f" Cargando tokenizer: {args.model}")
+    tokenizer = AutoTokenizer.from_pretrained(args.model)
+    tokenizer.pad_token = tokenizer.eos_token
+
+    def format_example(example):
+        """
+        Construye el texto de entrenamiento (prompt + respuesta).
+        Aprende a generar el número total de picos.
+        """
+        concept = str(example["concept"])
+
+        prompt = (
+            "Given the following ECG sequence, determine the total number of peaks.\n\n"
+            f"ECG sequence:\n{example['input']}\n\n"
+            "Number of peaks:"
+        )
+
+        return tokenizer(
+            prompt + " " + concept,
+            truncation=True,
+            padding=False,
+            max_length=64
+        )
+
+    # Tokenizar el dataset y eliminación de columnas
+    print("🧩 Tokenizando ejemplos...")
+    tokenized_dataset = dataset.map(
+        format_example,
+        remove_columns=dataset["train"].column_names
+    )
+
+    # Cargar el modelo y activar checkpointing para reducir el consumo de memoria
+    print(f"Cargando modelo base: {args.model}")
+    model = AutoModelForCausalLM.from_pretrained(
+        args.model,
+        device_map="auto"
+    )
+    model.gradient_checkpointing_enable()
+    model.config.use_cache = False
+
+    # LoRA
+    print("🧠 Aplicando LoRA...")
+    lora_config = LoraConfig(
+        r=4,
+        lora_alpha=8,
+        target_modules=["q_proj", "v_proj"],
+        lora_dropout=0.05,
+        bias="none",
+        task_type="CAUSAL_LM"
+    )
+
+    model = get_peft_model(model, lora_config)
+    model.print_trainable_parameters()
+
+    # Entrenamiento
+    # Configuración de los hiperparámetros de entrenamiento
+    training_args = TrainingArguments(
+        output_dir=str(output_dir),
+        num_train_epochs=args.epochs,
+        per_device_train_batch_size=1,
+        gradient_accumulation_steps=1,
+        learning_rate=2e-4,
+        fp16=True,
+        save_strategy="no",
+        logging_steps=10,
+        report_to="none"
+    )
+
+    trainer = Trainer(
+        model=model,
+        args=training_args,
+        train_dataset=tokenized_dataset["train"],
+        data_collator=DataCollatorForLanguageModeling(
+            tokenizer=tokenizer,
+            mlm=False
+        )
+    )
+
+    # Entrenar
+    print("⏳ Comenzando fine-tuning...")
+    trainer.train()
+
+    # Guardar el modelo fine-tuneado
+    print("💾 Guardando modelo ajustado...")
+    model.save_pretrained(output_dir)
+    tokenizer.save_pretrained(output_dir)
+
+    print("✅ Fine-tuning por conceptos (nº de picos total)")
+    print(f"Modelo guardado en: {output_dir}")
+
+
+if __name__ == "__main__":
+    main()
+
+

@@ -1,5 +1,5 @@
 """Convierte el dataset utilizado en ICL/DSPy (CSV) a un formato 
-compatible con Fine-tuning por etiquetas en formato JSONL"""
+compatible con Fine-tuning por conceptos en formato JSONL"""
 
 from pathlib import Path
 import csv
@@ -22,7 +22,8 @@ with open(data_dir / "test_metadata.csv", newline="", encoding="utf-8") as f:
     for row in reader:
         rows.append({
             "input": row["sequence"],   # entrada del modelo
-            "output": row["label"]      # etiqueta esperada
+            "label": row["label"],      # para análisis
+            "concept": int(row["num_peaks"])      # concepto esperada
         })
 
 # Mezclar para evitar sesgos
@@ -41,10 +42,10 @@ def save_dataset(path, data):
             f.write(json.dumps(ex) + "\n")
 
 #Guardar el dataset de entrenamiento y validación
-save_dataset(output_dir / "train_labels.jsonl", train_rows)
-save_dataset(output_dir / "val_labels.jsonl", val_rows)
+save_dataset(output_dir / "train_concepts.jsonl", train_rows)
+save_dataset(output_dir / "val_concepts.jsonl", val_rows)
 
-print("✅ Dataset de fine-tuning por etiquetas")
+print("✅ Dataset de fine-tuning por conceptos")
 print(f"   Train: {len(train_rows)} ejemplos")
 print(f"   Val:   {len(val_rows)} ejemplos")
 print(f"   Ruta:  {output_dir}")
