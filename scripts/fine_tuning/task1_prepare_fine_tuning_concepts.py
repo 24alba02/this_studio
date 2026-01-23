@@ -23,7 +23,7 @@ with open(data_dir / "test_metadata.csv", newline="", encoding="utf-8") as f:
         rows.append({
             "input": row["sequence"],   # entrada del modelo
             "label": row["label"],      # para análisis
-            "concept": int(row["num_peaks"])      # concepto esperada
+            "concept": int(row["total_picos"])      # concepto esperada
         })
 
 # Mezclar para evitar sesgos
